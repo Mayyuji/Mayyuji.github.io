@@ -1,4 +1,8 @@
 favicon: /images/headicon.png #不知道为啥ico不起作用...
+head: #iconfont
+  js:
+    async:
+      iconfont: //at.alicdn.com/t/font_2112560_1yz4i429jcs.js
 avatar: # 狗头保命
   enable: true
   url: /images/tutou.jpg
@@ -29,11 +33,12 @@ social: #图标设置
 banner: #首页大屏
   enable: true
   title: 兔儿的小窝~
+  color: 'white'
   src: /js/ui/banner.js
   border: true
   cloud:
     enable: true
-    color: 'white'
+    color: 'LightSteelBlue'
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
@@ -42,41 +47,38 @@ notice: #标语
   content: 很有用的没用小窝🍗
 bg_image: # bannerphtot---
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  url: /images/bg.jpg
   # dark:
   # blur: 30px # 设置背景模糊程度
   opacity: 0.8
 fireworks: #点击效果 等待主题配色
   enable: true
   colors:
-    #FF1461', '#18FF92', '#5A87FF
+    #FF1461', '#18FF92', '#5A87FF ,#FBF38C
     - '255,20,97'
     - '24,255,146'
     - '90,135,255'
+    - '251,243,140'
 sidebar: # 侧边栏底图
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg #uu背景图
+  bg_image: /images/sidepic.png #uu背景图
   bg_position: bottom 3rem center
   tagcloud:
-    enable: true
+    enable: false
     amount: 20
 menu: # 大概能叫做路由吧
   home:
     path: /
-    icon: icon-home-4-line
+    icon: icon-home
   list:
     - type: archives
       path: /archives/
-      icon: icon-archive-line
+      icon: icon-daohang-yiguidang
     - type: categories
       path: /categories/
-      icon: icon-folder-2-line
+      icon: icon-fenlei
     - type: tags
       path: /tags/
-      icon: icon-price-tag-3-line
-  custom:
-    title: 实验室
-    path: /experiment/
-    icon: icon-information-line #uu换图
+      icon: icon-biaoqian
 footer: #页脚
   since: 1202
   icon:
@@ -85,6 +87,7 @@ footer: #页脚
     color: '#0078E7'
   powered:
     enable: true
+  custom_text: <span style="color:white;fontsize:12px">看不清?我也看不清</span>
 say: #一句话时间
   enable: false
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
@@ -107,9 +110,16 @@ tags: #标签色彩
   TypeScript: '#317AC6'
   Laravel: '#F4645F'
 colors: # 主题色
-  primary: '#6200ee'
-  # bg: "#F5F5F5"
+  primary: '#8DADFC'
+  # bg: '#FF0000'
   selection_bg: '#8e71c1' # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
   # tag_start_color:
   # tag_end_color:
+wordcloud:
+  enable: true
+# 文章相关配置
+post_card: #透明度
+  opacity: 0.5
+reward:
+  enable: false

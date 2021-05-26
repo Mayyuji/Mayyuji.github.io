@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://Mayyuji.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -105,4 +105,4 @@ deploy:
   type: git
   repo: https://github.com/Mayyuji/Mayyuji.github.io
   branch: master # 默认使用 master 分支
-  message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+  message: 完成了网站的最基本配置,更改了部分文件 # 你可以自定义此次部署更新的说明
