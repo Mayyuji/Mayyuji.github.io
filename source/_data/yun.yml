@@ -52,10 +52,10 @@ notice: #标语
   content: 很有用的没用小窝🍗
 bg_image: # bannerphtot---
   enable: true
-  url: /images/bg.jpg
+  url: https://z3.ax1x.com/2021/05/26/295J29.jpg
   # dark:
   # blur: 30px # 设置背景模糊程度
-  opacity: 0.8
+  # opacity: 0.8
 fireworks: #点击效果 等待主题配色
   enable: true
   colors:
@@ -70,6 +70,13 @@ sidebar: # 侧边栏底图
   tagcloud:
     enable: false
     amount: 20
+search: #搜索相关
+  modal: true
+engine_search:
+  enable: false
+local_search:
+  enable: true
+  src: /js/search/local-search.js
 menu: # 大概能叫做路由吧
   home:
     path: /
