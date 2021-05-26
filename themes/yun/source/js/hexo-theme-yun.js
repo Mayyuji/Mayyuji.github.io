@@ -6,20 +6,20 @@ Yun.boot = {
    */
   copyright() {
     console.log(
-      `%c ☁️ hexo-theme-yun ${CONFIG.version} %c https://github.com/YunYouJun/hexo-theme-yun`,
-      "color: white; background: #0078E7; padding:5px 0;",
-      "padding:4px;border:1px solid #0078E7;"
-    );
+      `%c 🎉恭喜你发现了终极秘密🎉 %c 奖励是 : 没有😑`,
+      'color: white; background: #8DADFC; padding:5px 0;',
+      'padding:4px;border:1px solid #8DADFC;'
+    )
   },
-};
-
-function initPage() {
-  Yun.utils.registerToggleSidebar();
-  Yun.utils.registerScrollPercent();
-
-  Yun.utils.insertCopyCodeBtn();
-  Yun.utils.wrapTable();
 }
 
-Yun.boot.copyright();
-document.addEventListener("DOMContentLoaded", initPage);
+function initPage() {
+  Yun.utils.registerToggleSidebar()
+  Yun.utils.registerScrollPercent()
+
+  Yun.utils.insertCopyCodeBtn()
+  Yun.utils.wrapTable()
+}
+
+Yun.boot.copyright()
+document.addEventListener('DOMContentLoaded', initPage)

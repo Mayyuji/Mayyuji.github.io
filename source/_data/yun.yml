@@ -2,7 +2,7 @@ favicon: /images/headicon.png #不知道为啥ico不起作用...
 head: #iconfont
   js:
     async:
-      iconfont: //at.alicdn.com/t/font_2112560_1yz4i429jcs.js
+      iconfont: //at.alicdn.com/t/font_2112560_4q0xnmt5m6.js
 avatar: # 狗头保命
   enable: true
   url: /images/tutou.jpg
@@ -30,6 +30,11 @@ social: #图标设置
     link: mailto:2455626085@qq.com
     icon: icon-mail-line
     color: '#8E71C1'
+pages: #其他链接
+  - name: 实验室
+    url: /experiment/
+    icon: icon-shiyanshi
+    color: dodgerblue
 banner: #首页大屏
   enable: true
   title: 兔儿的小窝~
@@ -87,7 +92,7 @@ footer: #页脚
     color: '#0078E7'
   powered:
     enable: true
-  custom_text: <span style="color:white;fontsize:12px">看不清?我也看不清</span>
+  custom_text: <p style="color:white;">🙃</p>
 say: #一句话时间
   enable: false
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
