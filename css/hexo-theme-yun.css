@@ -1201,6 +1201,7 @@ body::before {
 .post-card-tag {
   display: inline-flex;
   justify-content: flex-end;
+  overflow: hidden;
 }
 .tag-item,
 .category-item {
