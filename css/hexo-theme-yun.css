@@ -1165,6 +1165,7 @@ body::before {
   transition-duration: 0.3s;
   transition-delay: 0s;
   background-color: rgba(255,255,255,0.5);
+  border-radius: 4px;
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
 /* tag 容器 */
 }
@@ -1742,10 +1743,10 @@ body::before {
   left: 0;
   width: 20rem;
   background-color: #fff;
-  background-image: url("/images/sidepic.png");
+  background-image: url("");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom 3rem center;
+  background-position: bottom 1rem center;
   text-align: center;
   z-index: 10;
   transition-property: all;
@@ -2040,32 +2041,6 @@ body::before {
 #search .icon {
   color: #8dadfc;
 }
-#comment {
-  margin: 0 1rem;
-  padding: 1rem;
-  background-color: var(--post-block-bg-color);
-}
-@media screen and (max-width: 768px) {
-  #comment {
-    margin: 0;
-  }
-}
-.comment-tooltip {
-  font-size: 0.8rem;
-  color: var(--hty-text-color);
-  padding: 0.5rem;
-  border: 1px solid #f0f0f0;
-  margin-bottom: 1rem;
-}
-#github-issues {
-  margin: 1rem;
-}
-.v[data-class=v] p {
-  color: var(--hty-text-color) !important;
-}
-.v[data-class=v] p code {
-  color: #000;
-}
 .notice {
   display: flex;
   flex-direction: column;
@@ -2078,6 +2053,7 @@ body::before {
   border: 1px solid #000;
   max-width: calc(900px - 2rem);
   background-color: rgba(255,255,255,0.3);
+  border-radius: 4px;
 }
 @media screen and (max-width: 768px) {
   .notice {
