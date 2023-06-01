@@ -405,3 +405,27 @@ export default {
 #####  重置表单数据
 
 this.formData = this.$options.data().formData
+##### 虚拟表格渲染
+umy-ui 虚拟表格渲染
+#####  生成随机字符串
+
+> Math.random().toString(36).substr(2)
+
+##### mask-image, mix-blend-mode, background-clip
+
+##### 空值判断
+
+```javascript
+if((value??'') !== ''){
+  //...
+}
+```
+
+##### 识别文本内的换行\n
+```css
+white-space: pre-line
+```
+
+#####  vue2使用了deep还是监听不到props的值
+
+<p style="color: red">是不是组件外层使用了`v-if`</p>
