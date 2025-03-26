@@ -18,6 +18,14 @@ tags: ''
 * 使用`getStaticProps`配合`fs`实现文章元数据渲染
 * 使用`fs`模块和`getStaticPaths`实现动态路由效果
 
-### 部署
-
-
+### 部署及遇到的问题
+* 添加配置`next.config.ts`
+  - ```output: 'export', 
+    assetPrefix: './',
+    images: {
+      unoptimized: true,  // 禁用图片优化API，使其与静态导出兼容
+    },```
+* 部署到xxx.github.io下不需要配置 basePath
+* 使用 workflows 自动打包部署
+* 项目页面正常访问但是`css``js`文件404
+  - 静态文件`assetPrefix`未配置
