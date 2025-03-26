@@ -1,6 +1,6 @@
 ---
 title: 0元购,将网站解析到阿里云域名
-date: 2023-06-01 23:06:01
+date: '2023-06-01'
 description: 如何把github.io解析到对应服务上域下的步骤
 categories:
   - Diary

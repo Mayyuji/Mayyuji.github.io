@@ -1,6 +1,6 @@
 ---
 title: Vue XMind
-date: 2021-04-27 11:08:29
+date: '2021-04-27'
 categories:
   - XMind
   - H5
