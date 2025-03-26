@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'export', 
+  assetPrefix: './',
   images: {
     unoptimized: true,  // 禁用图片优化API，使其与静态导出兼容
   },
