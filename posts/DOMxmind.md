@@ -859,7 +859,6 @@ tags:
                         x="0"
                         fill="#376092"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎DOM
                       </tspan>
@@ -943,7 +942,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎DOM节点的类型
                       </tspan>
@@ -1017,7 +1015,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎元素节点：&lt;div&gt;&lt;/div&gt;
                       </tspan>
@@ -1091,7 +1088,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎属性节点：id = 'div1'
                       </tspan>
@@ -1165,7 +1161,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎文本节点：div文本
                       </tspan>
@@ -1249,7 +1244,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎获取元素节点的方式
                       </tspan>
@@ -1323,7 +1317,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎node.getElementsByTagName();
                       </tspan>
@@ -1397,7 +1390,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎node.getElementsByClassName(); IE8以下不兼容
                       </tspan>
@@ -1471,7 +1463,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎document.getElementById();
                       </tspan>
@@ -1545,7 +1536,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎document.getElementsByName();
                       </tspan>
@@ -1628,7 +1618,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎document.querySelector()
                       </tspan>
@@ -1702,7 +1691,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎返回值：一定是一个元素节点，只返回符合条件的第一
                       </tspan>
@@ -1717,7 +1705,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎个。
                       </tspan>
@@ -1800,7 +1787,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎document.querySelectorAll()
                       </tspan>
@@ -1874,7 +1860,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎返回值：一定是数组，这个数组装有符合条件的元素。
                       </tspan>
@@ -1948,7 +1933,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：通过传入的参数，获取对应的元素节点。
                       </tspan>
@@ -2022,7 +2006,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎参数：字符串 模拟css选择器获取元素的方式。
                       </tspan>
@@ -2097,7 +2080,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎IE8以下不兼容
                       </tspan>
@@ -2172,7 +2154,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎可以指定从node开始查找
                       </tspan>
@@ -2256,7 +2237,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎元素节点的属性
                       </tspan>
@@ -2330,7 +2310,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎oDiv.id
                       </tspan>
@@ -2404,7 +2383,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎oDiv.title
                       </tspan>
@@ -2487,7 +2465,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎oDiv.className
                       </tspan>
@@ -2561,7 +2538,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎访问class 必须写成className
                       </tspan>
@@ -2635,7 +2611,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎oDiv.style.width
                       </tspan>
@@ -2709,7 +2684,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎oDiv.style.backgroundColor
                       </tspan>
@@ -2786,7 +2760,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎遇到中间带-的css样式，-去掉，从第二个单词开始首字
                       </tspan>
@@ -2801,7 +2774,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎母大写。
                       </tspan>
@@ -2875,7 +2847,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎innerHTML 标签间内容
                       </tspan>
@@ -2949,7 +2920,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎innerText 标签间纯文本(不带标签)
                       </tspan>
@@ -3023,7 +2993,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎outerHTML 整个标签
                       </tspan>
@@ -3097,7 +3066,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎tagName 返回当前元素节点的标签名(大写)
                       </tspan>
@@ -3172,7 +3140,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎只能获取内联的css样式。
                       </tspan>
@@ -3249,7 +3216,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎//获取当前有效样式浏览器兼容的写法
                       </tspan>
@@ -3264,7 +3230,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎function getStyle(node, cssStr){
                       </tspan>
@@ -3279,7 +3244,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ return node.currentStyle ? node.currentStyle[
                       </tspan>
@@ -3294,7 +3258,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎cssStr] : getComputedStyle(node)[cssStr];
                       </tspan>
@@ -3309,7 +3272,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎}
                       </tspan>
@@ -3393,7 +3355,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎setAttribute系列方法
                       </tspan>
@@ -3467,7 +3428,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎setAttribute
                       </tspan>
@@ -3541,7 +3501,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎getAttribute
                       </tspan>
@@ -3615,7 +3574,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎removeAttribute
                       </tspan>
@@ -3692,7 +3650,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎区别：
                       </tspan>
@@ -3707,7 +3664,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ 1、访问class属性不一样
                       </tspan>
@@ -3722,7 +3678,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ 2、支持自定义属性
                       </tspan>
@@ -3797,7 +3752,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎【注】操作元素节点行间的属性。
                       </tspan>
@@ -3881,7 +3835,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎元素节点子节点
                       </tspan>
@@ -3955,7 +3908,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎childNodes 获取某一个元素节点所有的子节点。 伪数
                       </tspan>
@@ -3970,7 +3922,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎组
                       </tspan>
@@ -4044,7 +3995,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎firstChild 快速获取到第一个子节点
                       </tspan>
@@ -4118,7 +4068,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎lastChild 快速获取到最后一个子节点
                       </tspan>
@@ -4192,7 +4141,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎nextSibling 找到兄弟节点中的下一个节点
                       </tspan>
@@ -4266,7 +4214,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎previousSibling 找到兄弟节点中的上一个节点
                       </tspan>
@@ -4349,7 +4296,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎【注】只获取子节点中的元素节点。
                       </tspan>
@@ -4423,7 +4369,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎children
                       </tspan>
@@ -4497,7 +4442,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎firstElementChild
                       </tspan>
@@ -4571,7 +4515,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎lastElementChild
                       </tspan>
@@ -4645,7 +4588,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎nextElementtSibling
                       </tspan>
@@ -4719,7 +4661,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎previousElementSibling
                       </tspan>
@@ -4794,7 +4735,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎IE8以下不兼容
                       </tspan>
@@ -4868,7 +4808,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎parentNode 可以快速获取到当前节点的父节点
                       </tspan>
@@ -4943,7 +4882,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎文本节点和元素节点都获取
                       </tspan>
@@ -5027,7 +4965,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎节点操作的方法
                       </tspan>
@@ -5101,7 +5038,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎document.write("hello world");
                       </tspan>
@@ -5178,7 +5114,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎输入内容的时候，将页面上原有的内容全部覆盖掉。
                       </tspan>
@@ -5252,7 +5187,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎document.createElement(标签的类型)
                       </tspan>
@@ -5335,7 +5269,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎appendChild()
                       </tspan>
@@ -5409,7 +5342,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ 格式：node1.appendChild(node2);
                       </tspan>
@@ -5483,7 +5415,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ 功能：将node2插入到node1的子节点末尾
                       </tspan>
@@ -5566,7 +5497,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎createTextNode()
                       </tspan>
@@ -5640,7 +5570,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎格式：document.createTextNode()
                       </tspan>
@@ -5714,7 +5643,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎参数：文本内容
                       </tspan>
@@ -5788,7 +5716,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：创建文本节点
                       </tspan>
@@ -5871,7 +5798,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎insertBefore()
                       </tspan>
@@ -5945,7 +5871,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎格式：box1.parentNode.insertBefore(box2, box1);
                       </tspan>
@@ -6019,7 +5944,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：将box2插入到box1的前面
                       </tspan>
@@ -6102,7 +6026,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎replaceChild()
                       </tspan>
@@ -6176,7 +6099,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎格式：box1.parentNode.replaceChild(box2, box1);
                       </tspan>
@@ -6250,7 +6172,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：用box2节点，将box1节点替换。
                       </tspan>
@@ -6333,7 +6254,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎removeChild()/remove()
                       </tspan>
@@ -6407,7 +6327,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎格式：box1.parentNode.removeChild(box1);
                       </tspan>
@@ -6481,7 +6400,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：将box1删除
                       </tspan>
@@ -6564,7 +6482,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎cloneNode()
                       </tspan>
@@ -6638,7 +6555,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎格式：node.cloneNode()/node.cloneNode(true)
                       </tspan>
@@ -6712,7 +6628,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：克隆节点,默认克隆节点本身
                       </tspan>
@@ -6786,7 +6701,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎返回值：新克隆出来的节点。
                       </tspan>

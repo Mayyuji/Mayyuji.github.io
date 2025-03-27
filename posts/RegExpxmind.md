@@ -906,7 +906,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎正则表达式
                       </tspan>
@@ -988,7 +987,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎正则声明
                       </tspan>
@@ -1061,7 +1059,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var box = new RegExp( ' hellow ' ,参数2 )
                       </tspan>
@@ -1134,7 +1131,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ var box = RegExp( ' hellow ' ,参数2 )
                       </tspan>
@@ -1207,7 +1203,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎/dellow/参数2
                       </tspan>
@@ -1289,7 +1284,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎参数2
                       </tspan>
@@ -1362,7 +1356,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎i 忽略内部大小写
                       </tspan>
@@ -1435,7 +1428,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎g 全局匹配 ,不写时只会匹配一次
                       </tspan>
@@ -1508,7 +1500,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎m 换行匹配
                       </tspan>
@@ -1590,7 +1581,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎正则对象方法
                       </tspan>
@@ -1672,7 +1662,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎test
                       </tspan>
@@ -1745,7 +1734,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎正则.test(字符串)
                       </tspan>
@@ -1818,7 +1806,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎在字符串中查找正则是否存在,存在时返回true,不
                       </tspan>
@@ -1833,7 +1820,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎存在时返回false
                       </tspan>
@@ -1915,7 +1901,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎.exec()
                       </tspan>
@@ -1988,7 +1973,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎正则.exec(字符串)
                       </tspan>
@@ -2061,7 +2045,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎在字符串中判断正则是否存在,存在时返回带有字
                       </tspan>
@@ -2076,7 +2059,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎符串的数组,不存在返回false
                       </tspan>
@@ -2158,7 +2140,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎字符串中的函数
                       </tspan>
@@ -2240,7 +2221,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎字符串.math( 正则)
                       </tspan>
@@ -2313,7 +2293,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎匹配成功时返回装有匹配到字符串的数组
                       </tspan>
@@ -2386,7 +2365,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎,失败时返回 null
                       </tspan>
@@ -2468,7 +2446,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var newStr = 字符串.replace(/are/ig(string), 参数2);
                       </tspan>
@@ -2541,7 +2518,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎匹配成功时返回字符串,用参数2替换正则内容或
                       </tspan>
@@ -2556,7 +2532,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎者原字符串内容(string),不影响原字符串
                       </tspan>
@@ -2629,7 +2604,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎失败时,输出原字符串
                       </tspan>
@@ -2711,7 +2685,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎字符串.search(正则)
                       </tspan>
@@ -2784,7 +2757,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎查找相应的正则出现的位置所对应的下
                       </tspan>
@@ -2799,7 +2771,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎标 ( 有多个匹配时返回第一个)
                       </tspan>
@@ -2872,7 +2843,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎匹配失败时返回 -1
                       </tspan>
@@ -2954,7 +2924,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var arr=字符串.split(正则)
                       </tspan>
@@ -3027,7 +2996,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎匹配成功,返回新数组,正则部分用点点代替
                       </tspan>
@@ -3100,7 +3068,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎失败时,将原字符串变为只有一个数据的数组
                       </tspan>
@@ -3182,7 +3149,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎元字符
                       </tspan>
@@ -3264,7 +3230,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎单个数字和字符的元字符
                       </tspan>
@@ -3337,7 +3302,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎. 匹配任意字符
                       </tspan>
@@ -3410,7 +3374,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎[范围] 匹配范围内的字符
                       </tspan>
@@ -3483,7 +3446,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎[^范围] 匹配非范围内的字符
                       </tspan>
@@ -3565,7 +3527,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎数字
                       </tspan>
@@ -3647,7 +3608,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎[0-9]
                       </tspan>
@@ -3720,7 +3680,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ 非数字 [^0-9}
                       </tspan>
@@ -3802,7 +3761,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\d
                       </tspan>
@@ -3875,7 +3833,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎非数字 \D
                       </tspan>
@@ -3957,7 +3914,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎字母
                       </tspan>
@@ -4039,7 +3995,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎[a-zA-Z]
                       </tspan>
@@ -4112,7 +4067,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎非应英文字母 [^a-zA-Z]
                       </tspan>
@@ -4194,7 +4148,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎字母数字下划线
                       </tspan>
@@ -4267,7 +4220,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎[a-zA-Z0-9_]
                       </tspan>
@@ -4340,7 +4292,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎[^a-zA-Z0-9_] 非字母数字下划线
                       </tspan>
@@ -4413,7 +4364,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\w
                       </tspan>
@@ -4486,7 +4436,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\W 非字母数字下划线
                       </tspan>
@@ -4568,7 +4517,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎空白字符
                       </tspan>
@@ -4650,7 +4598,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎常用
                       </tspan>
@@ -4732,7 +4679,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\s 匹配任意一个空白字符
                       </tspan>
@@ -4805,7 +4751,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎删除空格
                       </tspan>
@@ -4820,7 +4765,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var space = / \s/g;
                       </tspan>
@@ -4835,7 +4779,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var str =‘111 222 333';
                       </tspan>
@@ -4850,7 +4793,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var result = str.replace(space, ");
                       </tspan>
@@ -4865,7 +4807,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎alert(result);
                       </tspan>
@@ -4938,7 +4879,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\S 匹配任意一个非任意字符
                       </tspan>
@@ -5020,7 +4960,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎不常用
                       </tspan>
@@ -5093,7 +5032,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\0(数字零) 匹配null字符
                       </tspan>
@@ -5166,7 +5104,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\b 匹配空格字符
                       </tspan>
@@ -5239,7 +5176,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\f 匹配进纸字符
                       </tspan>
@@ -5312,7 +5248,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\n 匹配换行字符
                       </tspan>
@@ -5385,7 +5320,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\r 匹配回车字符
                       </tspan>
@@ -5458,7 +5392,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎\t 匹配制表符tab
                       </tspan>
@@ -5540,7 +5473,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎重复字符匹配 x(任意单字符)
                       </tspan>
@@ -5613,7 +5545,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎x? x字符有0个或者1个
                       </tspan>
@@ -5686,7 +5617,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎x+ 字符至少有一个
                       </tspan>
@@ -5759,7 +5689,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎x* x字符需要有任意个0
                       </tspan>
@@ -5832,7 +5761,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎x{ m,n } 至少有m个至多有n个 包括m和n个
                       </tspan>
@@ -5905,7 +5833,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎x{ n } 匹配n个字符,需要有几个x
                       </tspan>
@@ -5987,7 +5914,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎(abc)将abc看作一个单字符处理,
                       </tspan>
@@ -6060,7 +5986,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎(abc){2} 需要有两组abc
                       </tspan>
@@ -6142,7 +6067,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎替代字符 | 或
                       </tspan>
@@ -6224,7 +6148,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎字符串中有其中一项
                       </tspan>
@@ -6297,7 +6220,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var str = "bing"; var box = /baidu|bing|google/;
                       </tspan>
@@ -6379,7 +6301,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎锚点字符
                       </tspan>
@@ -6452,7 +6373,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎^ 行首匹配 必须以什么开头
                       </tspan>
@@ -6525,7 +6445,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎$ 行尾匹配 必须以这个正则结尾
                       </tspan>
@@ -6607,7 +6526,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎/^google$/ 所匹配的字符串必须是google
                       </tspan>
@@ -6680,7 +6598,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎goolegoole ( X)
                       </tspan>
@@ -6757,7 +6674,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎在这规则表达式中有特殊含义的字符
                       </tspan>
@@ -6839,7 +6755,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎简单验证
                       </tspan>
@@ -6921,7 +6836,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎只能输入中文
                       </tspan>
@@ -6994,7 +6908,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎str.replace(/[^\ue400-\u9fa5]/g,'') 如果输入的
                       </tspan>
@@ -7009,7 +6922,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎不是总中文替换为空
                       </tspan>
@@ -7082,7 +6994,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎案例: var str = '12我555我444wo';
                       </tspan>
@@ -7097,7 +7008,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ var box = /[^\u4e00-\u9fa5]/g;
                       </tspan>
@@ -7112,7 +7022,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ console.log(str.replace(box, ''));
                       </tspan>
@@ -7127,7 +7036,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ 输出结果为中文
                       </tspan>
@@ -7211,7 +7119,6 @@ tags:
                         x="0"
                         fill="#332F2E"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎区分
                       </tspan>
@@ -7284,7 +7191,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎/^box/ 行首匹配
                       </tspan>
@@ -7357,7 +7263,6 @@ tags:
                         x="0"
                         fill="#091C34"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎/[^a-z]/ 除了a-z
                       </tspan>

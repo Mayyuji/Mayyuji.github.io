@@ -1372,7 +1372,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎事件 on+...
                       </tspan>
@@ -1456,7 +1455,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎绑定事件
                       </tspan>
@@ -1529,7 +1527,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎1.内联模式
                       </tspan>
@@ -1602,7 +1599,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎2.外联模式/脚本模式(最多)
                       </tspan>
@@ -1679,7 +1675,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎元素节点 . on+事件类型= 匿名函数
                       </tspan>
@@ -1763,7 +1758,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎事件类型
                       </tspan>
@@ -1845,7 +1839,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎一.鼠标事件(可以绑定在任意元素节点上 )
                       </tspan>
@@ -1918,7 +1911,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎click 单击
                       </tspan>
@@ -1991,7 +1983,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎dblclick 双击
                       </tspan>
@@ -2073,7 +2064,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mouseover 鼠标移入
                       </tspan>
@@ -2146,7 +2136,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎不论鼠标指针穿过被选元素或其子元素，都会触发
                       </tspan>
@@ -2161,7 +2150,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mouseover 事件
                       </tspan>
@@ -2243,7 +2231,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mouseout 鼠标移出
                       </tspan>
@@ -2316,7 +2303,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎同理mouseover
                       </tspan>
@@ -2398,7 +2384,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mouseenter 鼠标移入
                       </tspan>
@@ -2471,7 +2456,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎只有在鼠标指针穿过被选元素时，才会触发
                       </tspan>
@@ -2486,7 +2470,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mouseenter 事件。
                       </tspan>
@@ -2568,7 +2551,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mouseleave 鼠标移出
                       </tspan>
@@ -2641,7 +2623,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎同理mouseenter
                       </tspan>
@@ -2714,7 +2695,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mousemove 鼠标移动( 会不停触发)
                       </tspan>
@@ -2787,7 +2767,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mousedown 鼠标按下
                       </tspan>
@@ -2860,7 +2839,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎mouseup 鼠标抬起
                       </tspan>
@@ -2942,7 +2920,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎二.键盘事件
                       </tspan>
@@ -3015,7 +2992,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎keydown 键盘按下(如果不松手,会一直触发)
                       </tspan>
@@ -3088,7 +3064,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎keyup 键盘抬起
                       </tspan>
@@ -3161,7 +3136,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎keypress 键盘按下(只支持字符键(不包括小键盘) 持
                       </tspan>
@@ -3176,7 +3150,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎续触发)
                       </tspan>
@@ -3258,7 +3231,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎三.HTMl事件
                       </tspan>
@@ -3340,7 +3312,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎1.window事件
                       </tspan>
@@ -3413,7 +3384,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎load 当页面加载完成后触发
                       </tspan>
@@ -3486,7 +3456,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎unload 当页面解构的时候出发(刷新页面,关闭当前
                       </tspan>
@@ -3501,7 +3470,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎页) IE浏览器兼容
                       </tspan>
@@ -3574,7 +3542,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎scroll 页面滚动
                       </tspan>
@@ -3647,7 +3614,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎resize 窗口大小发生变化时触发
                       </tspan>
@@ -3729,7 +3695,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎2.表单事件
                       </tspan>
@@ -3802,7 +3767,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎blur 失去焦点
                       </tspan>
@@ -3875,7 +3839,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎focus 获取焦点
                       </tspan>
@@ -3948,7 +3911,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎select 当在输入框内选中文本时触发
                       </tspan>
@@ -4021,7 +3983,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎input 当在输入框输入时触发 包括删除
                       </tspan>
@@ -4094,7 +4055,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎change 当对输入框的文本进行修改并且数去焦点时
                       </tspan>
@@ -4109,7 +4069,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎触发
                       </tspan>
@@ -4182,7 +4141,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎submit 点击submit按钮时触发
                       </tspan>
@@ -4255,7 +4213,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎reset 点击reset 按钮时触发
                       </tspan>
@@ -4331,7 +4288,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎必须添加在form表单内
                       </tspan>
@@ -4415,7 +4371,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎事件对象
                       </tspan>
@@ -4497,7 +4452,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎button 的属性 e.button
                       </tspan>
@@ -4570,7 +4524,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎0 左键
                       </tspan>
@@ -4643,7 +4596,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎1 按下鼠标中键
                       </tspan>
@@ -4716,7 +4668,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎2 按下鼠标右键
                       </tspan>
@@ -4798,7 +4749,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎获取当前鼠标位置 ( 获取时原点不同)
                       </tspan>
@@ -4871,7 +4821,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎clientX clientY 原点位置 :可视窗口的左上角为原点
                       </tspan>
@@ -4944,7 +4893,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎pageX pageY 整个页面的左上角包含滚动出去的
                       </tspan>
@@ -4959,7 +4907,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎距离
                       </tspan>
@@ -5032,7 +4979,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎screenX screenY 电脑屏幕的左上角
                       </tspan>
@@ -5105,7 +5051,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎offsetX offsetY 相对于点击元素的边框内测来计
                       </tspan>
@@ -5120,7 +5065,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎算
                       </tspan>
@@ -5202,7 +5146,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎四个修改键
                       </tspan>
@@ -5275,7 +5218,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎shiftKey 如果按下就为true,否则为false
                       </tspan>
@@ -5348,7 +5290,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ctrlKey
                       </tspan>
@@ -5421,7 +5362,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎altKey
                       </tspan>
@@ -5494,7 +5434,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎metaKey ( window键 mac的command键 )
                       </tspan>
@@ -5576,7 +5515,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎键码:只在keydown下支持
                       </tspan>
@@ -5649,7 +5587,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎注: 不管是大小写字母,返回值都为大写字母的ASCII
                       </tspan>
@@ -5664,7 +5601,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎码值
                       </tspan>
@@ -5746,7 +5682,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎keyCode 只在keydown下生效
                       </tspan>
@@ -5819,7 +5754,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎回车13 左上右下37 38 39 40
                       </tspan>
@@ -5892,7 +5826,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎不区分大小写(字母按大写),返回值为ASCII码值
                       </tspan>
@@ -5965,7 +5898,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎兼容写法 : var which = e.whiich || e.keyCode
                       </tspan>
@@ -6042,7 +5974,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎var which=e.keyCode||e.which
                       </tspan>
@@ -6124,7 +6055,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎字符码: 只在keypress下支持
                       </tspan>
@@ -6206,7 +6136,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎注: 区分大小写,按下时返回这个键的ASCII码值
                       </tspan>
@@ -6279,7 +6208,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ charCode 字符码 返回区分大小写的ASCII码值
                       </tspan>
@@ -6352,7 +6280,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ 兼容写法: var which = e.which || e.charCode;
                       </tspan>
@@ -6429,7 +6356,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎var which=e.keyCode||e.which
                       </tspan>
@@ -6511,7 +6437,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎target
                       </tspan>
@@ -6584,7 +6509,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎注: 这个事件是由谁而起的
                       </tspan>
@@ -6657,7 +6581,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎IE8 不兼容window.event.srcElement;
                       </tspan>
@@ -6734,7 +6657,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎目标对象/触发对象/ 事件对象的属性
                       </tspan>
@@ -6811,7 +6733,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎var e=ev ||window.event ( 兼容写法 )
                       </tspan>
@@ -6895,7 +6816,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎事件流
                       </tspan>
@@ -6968,7 +6888,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎时间冒泡: 由里向外逐级触发. ( 默认 )
                       </tspan>
@@ -7041,7 +6960,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎事件捕获 : 由外向里逐级触发
                       </tspan>
@@ -7118,7 +7036,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎阻止事件冒泡: 浏览器兼容问题事
                       </tspan>
@@ -7133,7 +7050,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎件对象的属性和方法:
                       </tspan>
@@ -7148,7 +7064,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎function stopBubble(ev){ if(ev.
                       </tspan>
@@ -7163,7 +7078,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎cancelBubble){
                       </tspan>
@@ -7178,7 +7092,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ ev.cancelBubble= true; }
                       </tspan>
@@ -7193,7 +7106,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎else{
                       </tspan>
@@ -7208,7 +7120,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ ev.stopPropagation();
                       </tspan>
@@ -7223,7 +7134,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ }
                       </tspan>
@@ -7238,7 +7148,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ }
                       </tspan>
@@ -7322,7 +7231,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎鼠标位置
                       </tspan>
@@ -7395,7 +7303,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎e.pageX()相对于这个html页面左上角带滚动条
                       </tspan>
@@ -7468,7 +7375,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ e.clientX()相对与可视窗口左上角
                       </tspan>
@@ -7541,7 +7447,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ e.offsetX()相对与触发事件左上角
                       </tspan>
@@ -7614,7 +7519,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ e.screenX()相对于屏幕左上角
                       </tspan>
@@ -7698,7 +7602,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎事件方法
                       </tspan>
@@ -7780,7 +7683,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎阻止右键菜单
                       </tspan>
@@ -7853,7 +7755,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎鼠标点击onclick事件优先度小于右键菜单使用
                       </tspan>
@@ -7868,7 +7769,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎onmousedown 方法
                       </tspan>
@@ -7941,7 +7841,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎document.oncontentmenu=function(){return
                       </tspan>
@@ -7956,7 +7855,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎false }
                       </tspan>
@@ -8029,7 +7927,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎if(e.button == 2) 可以另写自己的右键菜单
                       </tspan>
@@ -8111,7 +8008,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎阻止超链接默认行为
                       </tspan>
@@ -8193,7 +8089,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎简单方法
                       </tspan>
@@ -8266,7 +8161,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎a.onclick=function(){ return flase }
                       </tspan>
@@ -8339,7 +8233,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎利用返回会false不跳转 return confirm ( ' 你确定
                       </tspan>
@@ -8354,7 +8247,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎要离开吗 ' )
                       </tspan>
@@ -8436,7 +8328,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎官方方法
                       </tspan>
@@ -8518,7 +8409,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎e.preventDefault();
                       </tspan>
@@ -8600,7 +8490,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎兼容问题 (调用函数跨浏览器兼容)
                       </tspan>
@@ -8673,7 +8562,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎function preDef(ev) {
                       </tspan>
@@ -8688,7 +8576,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ if (ev.preventDefault) {
                       </tspan>
@@ -8703,7 +8590,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ ev.preventDefault();
                       </tspan>
@@ -8718,7 +8604,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ } else {
                       </tspan>
@@ -8733,7 +8618,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ ev.returnValue = false;
                       </tspan>
@@ -8748,7 +8632,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ }
                       </tspan>
@@ -8763,7 +8646,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ }
                       </tspan>
@@ -8845,7 +8727,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎拖拽实现
                       </tspan>
@@ -8927,7 +8808,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎node.mousedown
                       </tspan>
@@ -9000,7 +8880,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var X=e.clientX-node.offsetLeft;
                       </tspan>
@@ -9073,7 +8952,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var Y=e.clientY-node.offsetTop;
                       </tspan>
@@ -9155,7 +9033,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎document.mousemove
                       </tspan>
@@ -9228,7 +9105,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎node.style.left=e.clientX-X+'px '
                       </tspan>
@@ -9301,7 +9177,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎node.style.top=e.clientY-Y+'px'
                       </tspan>
@@ -9383,7 +9258,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎document.onmouseup
                       </tspan>
@@ -9456,7 +9330,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎document.mousemove=null
                       </tspan>
@@ -9541,7 +9414,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎书写代码结构
                       </tspan>
@@ -9614,7 +9486,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎clientX clientY 窗口的左上角为原点
                       </tspan>
@@ -9687,7 +9558,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎node.offsetLeft node.offsetTop 没有position时
                       </tspan>
@@ -9702,7 +9572,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎为到窗口左上角的距离
                       </tspan>
@@ -9784,7 +9653,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎事件委托
                       </tspan>
@@ -9857,7 +9725,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎给需要事件的节点的父节点或者祖先节点添加,给需
                       </tspan>
@@ -9872,7 +9739,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎要事件的节点添加判断以进行操作
                       </tspan>
@@ -9954,7 +9820,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎父节点.onclick
                       </tspan>
@@ -10027,7 +9892,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var e.ev||window.event;
                       </tspan>
@@ -10100,7 +9964,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var target=e.target||window.event;
                       </tspan>
@@ -10173,7 +10036,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎if(target.tagName==='需要事件节点的标签名的大
                       </tspan>
@@ -10188,7 +10050,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎写'){ 需要执行的操作 }
                       </tspan>
@@ -10265,7 +10126,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎或者通过.tolowCase()转化为小写
                       </tspan>
@@ -10347,7 +10207,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎事件监听绑定
                       </tspan>
@@ -10429,7 +10288,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎addEventListener(on+事件类型,函数,布
                       </tspan>
@@ -10444,7 +10302,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎尔) 事件监听器/事件侦听器
                       </tspan>
@@ -10526,7 +10383,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎布尔
                       </tspan>
@@ -10599,7 +10455,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎false 事件冒泡 由内向外触发
                       </tspan>
@@ -10699,7 +10554,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎true 事件捕获 由外向内触发
                       </tspan>
@@ -10772,7 +10626,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎attachEvent(事件,函数) IE78使用两个参数
                       </tspan>
@@ -10845,7 +10698,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎removeEventListenter(on+事件类型,函数) 解除事
                       </tspan>
@@ -10860,7 +10712,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎件绑定
                       </tspan>
@@ -10937,7 +10788,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎普通事件绑定,重复绑定函数时之前的函数会被覆盖
                       </tspan>
@@ -11019,7 +10869,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎组合键
                       </tspan>
@@ -11092,7 +10941,6 @@ tags:
                         x="0"
                         fill="#333333"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎var which=e.which||e.keyCode
                       </tspan>
@@ -11169,7 +11017,6 @@ tags:
                         x="0"
                         fill="#FFFFFF"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎DAY12
                       </tspan>

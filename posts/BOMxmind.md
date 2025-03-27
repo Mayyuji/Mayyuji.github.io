@@ -470,7 +470,6 @@ tags:
                         x="0"
                         fill="#376092"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎BOM
                       </tspan>
@@ -554,7 +553,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎window
                       </tspan>
@@ -628,7 +626,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎全局变量
                       </tspan>
@@ -702,7 +699,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎全局函数
                       </tspan>
@@ -786,7 +782,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎系统对话框
                       </tspan>
@@ -869,7 +864,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ alert()
                       </tspan>
@@ -943,7 +937,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎在当前页面上弹出警告框，并且显示内容
                       </tspan>
@@ -1026,7 +1019,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ confirm()
                       </tspan>
@@ -1100,7 +1092,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：弹出一个带确定和取消按钮的提示框
                       </tspan>
@@ -1183,7 +1174,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎返回值：
                       </tspan>
@@ -1257,7 +1247,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎点击确定返回true
                       </tspan>
@@ -1331,7 +1320,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎点击取消返回false
                       </tspan>
@@ -1414,7 +1402,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎prompt()
                       </tspan>
@@ -1488,7 +1475,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎功能：弹出一个带输入框的提示框
                       </tspan>
@@ -1571,7 +1557,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎参数：
                       </tspan>
@@ -1645,7 +1630,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎第一个参数：提示面板上的内容。
                       </tspan>
@@ -1719,7 +1703,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎第二个参数：输入框默认的值。
                       </tspan>
@@ -1802,7 +1785,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎返回值：
                       </tspan>
@@ -1876,7 +1858,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎点击确定，返回输入框中的内容
                       </tspan>
@@ -1950,7 +1931,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎点击取消，返回null
                       </tspan>
@@ -2034,7 +2014,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎open方法
                       </tspan>
@@ -2108,7 +2087,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎1.要加载的URL
                       </tspan>
@@ -2182,7 +2160,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎2.窗口的名称或者窗口的目标
                       </tspan>
@@ -2256,7 +2233,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎3.一个特性的字符串
                       </tspan>
@@ -2340,7 +2316,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎history对象
                       </tspan>
@@ -2414,7 +2389,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎history.length 输出历史记录的条数
                       </tspan>
@@ -2491,7 +2465,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎产生历史记录：每次加载的url不一样，就会产生历史记
                       </tspan>
@@ -2506,7 +2479,6 @@ tags:
                         x="0"
                         fill="#000000"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎录。
                       </tspan>
@@ -2589,7 +2561,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎方法：
                       </tspan>
@@ -2663,7 +2634,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ history.back() 返回上一条记录
                       </tspan>
@@ -2737,7 +2707,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎history.forward() 前进到下一条记录
                       </tspan>
@@ -2820,7 +2789,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎history.go()
                       </tspan>
@@ -2894,7 +2862,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎0 刷新当前页面
                       </tspan>
@@ -2968,7 +2935,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎正整数 前进对应数字条记录
                       </tspan>
@@ -3042,7 +3008,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎负整数 后退对应数字条记录
                       </tspan>
@@ -3126,7 +3091,6 @@ tags:
                         x="0"
                         fill="#17375E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎location对象
                       </tspan>
@@ -3200,7 +3164,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎url：统一资源定位符。
                       </tspan>
@@ -3274,7 +3237,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎完整格式：协议://域名(IP):端口号/路径?查询字符串#锚
                       </tspan>
@@ -3289,7 +3251,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎点
                       </tspan>
@@ -3363,7 +3324,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎英文格式：protocol://hostname:port/pathname?
                       </tspan>
@@ -3378,7 +3338,6 @@ tags:
                         x="0"
                         fill="#0A0E16"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎search#hash
                       </tspan>

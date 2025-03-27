@@ -407,7 +407,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎Vue
                       </tspan>
@@ -490,7 +489,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎配置项
                       </tspan>
@@ -562,7 +560,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎el 挂载点
                       </tspan>
@@ -643,7 +640,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎data 当前节点上vue上面的渲染的数据
                       </tspan>
@@ -715,7 +711,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎data里的数据可以通过实例访问 vm.name vm.
                       </tspan>
@@ -730,7 +725,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎age
                       </tspan>
@@ -802,7 +796,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎
                       </tspan>
@@ -885,7 +878,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎指令
                       </tspan>
@@ -966,7 +958,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-model
                       </tspan>
@@ -1038,7 +1029,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎双向数据绑定
                       </tspan>
@@ -1119,7 +1109,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-text
                       </tspan>
@@ -1200,7 +1189,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎纯文本通过
                       </tspan>
@@ -1272,7 +1260,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎指令里只能写表达式,变量不能直接写
                       </tspan>
@@ -1353,7 +1340,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-html
                       </tspan>
@@ -1425,7 +1411,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎基本语v-text相同 但是会解析html标签
                       </tspan>
@@ -1506,7 +1491,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-show
                       </tspan>
@@ -1587,7 +1571,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎后接表达式,表达式真假决定标签的 diapaly属性
                       </tspan>
@@ -1659,7 +1642,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎布尔值
                       </tspan>
@@ -1731,7 +1713,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎其他类型也行但不推荐
                       </tspan>
@@ -1812,7 +1793,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-if
                       </tspan>
@@ -1893,7 +1873,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎通过表达式决定元素是否渲染在页面上
                       </tspan>
@@ -1965,7 +1944,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-if
                       </tspan>
@@ -2037,7 +2015,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-else
                       </tspan>
@@ -2109,7 +2086,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-slseif
                       </tspan>
@@ -2190,7 +2166,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎template
                       </tspan>
@@ -2262,7 +2237,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎Vue 给我们提供一个 template 元素节点，他最
                       </tspan>
@@ -2277,7 +2251,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎后不会渲染到我们的页面，也就不会影响样式的
                       </tspan>
@@ -2292,7 +2265,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎布局
                       </tspan>
@@ -2364,7 +2336,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ v-show 不能用
                       </tspan>
@@ -2445,7 +2416,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎v-for
                       </tspan>
@@ -2517,7 +2487,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎子主题 1
                       </tspan>
@@ -2592,7 +2561,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎一个决定是否渲染一个是否展示,当组件需要频繁
                       </tspan>
@@ -2607,7 +2575,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎切换展示时,使用 v-show
                       </tspan>
@@ -2622,7 +2589,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎v-show 有更高的初始渲染开销
                       </tspan>
@@ -2637,7 +2603,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="middle"
-                        style="white-space: pre"
                       >
                         ‎ v-if 有更高的切换渲染开销
                       </tspan>
@@ -2720,7 +2685,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎遵循m v vm 的模式
                       </tspan>
@@ -2792,7 +2756,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎数据是双向绑定的:vue2.x 通过Object.
                       </tspan>
@@ -2807,7 +2770,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎defindPrototype()方法 拦截
                       </tspan>
@@ -2879,7 +2841,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎m 模型 model
                       </tspan>
@@ -2894,7 +2855,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ v 视图 view
                       </tspan>
@@ -2909,7 +2869,6 @@ tags:
                         x="0"
                         fill="#44556E"
                         text-anchor="start"
-                        style="white-space: pre"
                       >
                         ‎ c 控制器 controllwe
                       </tspan>
