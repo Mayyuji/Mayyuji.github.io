@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><link rel="icon" href="/favicon.ico" data-next-head=""/><meta name="description" content="Learn how to build a personal website using Next.js" data-next-head=""/><meta property="og:image" content="https://og-image.now.sh/Next.js%20Sample%20Website.png?theme=light&amp;md=0&amp;fontSize=75px&amp;images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg" data-next-head=""/><meta name="og:title" content="Next.js Sample Website" data-next-head=""/><meta name="twitter:card" content="summary_large_image" data-next-head=""/><title data-next-head="">ECMA5-6部分常用知识</title><link rel="preload" href="./_next/static/css/0275f6d90e7ad339.css" as="style"/><link rel="preload" href="./_next/static/css/cd382994e6c90229.css" as="style"/><link rel="stylesheet" href="./_next/static/css/0275f6d90e7ad339.css" data-n-g=""/><link rel="stylesheet" href="./_next/static/css/cd382994e6c90229.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" noModule="" src="./_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="./_next/static/chunks/webpack-502a0195d0ce5784.js" defer=""></script><script src="./_next/static/chunks/framework-b8ed9b642a1d405a.js" defer=""></script><script src="./_next/static/chunks/main-ab5047d121d86b53.js" defer=""></script><script src="./_next/static/chunks/pages/_app-a3f35041f74c110a.js" defer=""></script><script src="./_next/static/chunks/967-229adc9088239512.js" defer=""></script><script src="./_next/static/chunks/pages/posts/%5Bid%5D-31616be6e7ae4e05.js" defer=""></script><script src="./_next/static/F4dKJ982Y4flEsO0BumU9/_buildManifest.js" defer=""></script><script src="./_next/static/F4dKJ982Y4flEsO0BumU9/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div class="layout_container__ba1z3"><header class="layout_header__kmos1"><a href="/"><img alt="wu yue" loading="lazy" width="144" height="144" decoding="async" data-nimg="1" class="layout_headerImage__hicMB utils_borderCircle___lST3" style="color:transparent" src="/images/profile.png"/></a><h2 class="utils_headingLg__FgCCA"><a href="/"><span class="utils_colorInherit__TDEn8">wu yue</span></a></h2></header><main>ECMA5-6部分常用知识<br/>ecma5-6<br/>2021-04-27<br/><div><h3>ECMA5</h3>
+<ul>
+<li>
+<p>foreach 遍历</p>
+</li>
+<li>
+<p>filter 找出满足条件的项</p>
+</li>
+<li>
+<p>map 把数组的每一项进行数学运算</p>
+</li>
+<li>
+<p>JOSN 方法</p>
+</li>
+<li>
+<p>JOSN.parse</p>
+<ul>
+<li>是将 json 格式的字符串转换为 js 的对象</li>
+</ul>
+</li>
+<li>
+<p>JOSN.stringfy</p>
+<ul>
+<li>是将 对象或者数组转换成 json 格式的字符串</li>
+</ul>
+</li>
+<li>
+<p>THIS</p>
+</li>
+<li>
+<p>函数内部关键字</p>
+<ul>
+<li>this 指向只与调用者有关 有明确调用对象时指向事件源或调用者,没有时指向 window</li>
+</ul>
+</li>
+<li>
+<p>强制改变 this 指向的方法</p>
+<ul>
+<li>
+<p>函数.call( '新的指向' , 第一个参数 )</p>
+</li>
+<li>
+<p>函数.apply ( '指向' , [ 参数 ])</p>
+</li>
+</ul>
+<p>• 数组内存放需要传入的参数</p>
+<ul>
+<li>函数 . bind( ' 指向 ' )( 参数)</li>
+</ul>
+<p>• 第二个中括号内存放参数</p>
+</li>
+<li>
+<p>配合箭头函数使用</p>
+</li>
+<li>
+<p>array.forEach(item =>item);</p>
+</li>
+<li>
+<p>arr.filter(item=>item>2);</p>
+</li>
+<li>
+<p>arr.map(item => item * 2);</p>
+</li>
+<li>
+<p>let 和 const(定义变量)关键字</p>
+</li>
+<li>
+<p>let、const 和 var 的区别</p>
+</li>
+<li>
+<p>let 和 const 不允许重复声明变量</p>
+</li>
+<li>
+<p>let 和 const 不会预解析(变量提升)暂时死区</p>
+</li>
+<li>
+<p>let 和 const 声明的变量两个 { } 之间为它的作用域</p>
+</li>
+<li>
+<p>let 和 const 的区别</p>
+</li>
+<li>
+<p>let 声明变量之后可以改变值,const 不能(const 用来声明常量)</p>
+</li>
+<li>
+<p>let 声明的时候可以不赋值,const 声明时必须赋值</p>
+</li>
+<li>
+<p>箭头函数</p>
+</li>
+<li>
+<p>语法: (函数的形参)=>{ 函数体内要哦执行的代码}或者时 return 的值</p>
+</li>
+<li>
+<p>箭头函数的特殊性</p>
+</li>
+<li>
+<p>箭头函数内没有 this,箭头函数内的 this 是上一层函数中的 this</p>
+</li>
+<li>
+<p>箭头函数内没有 arguements 这个参数集合</p>
+</li>
+<li>
+<p>函数只有一个参数是可以不写(),大于一个时必须写</p>
+</li>
+<li>
+<p>函数体只有一行时可以不写 return 并且会自动返回 return,其余需要写全</p>
+</li>
+<li>
+<p>多线程</p>
+</li>
+<li>
+<p>程序的运行状态</p>
+</li>
+<li>
+<p>同步 : 阻塞.当前程序要执行,必须等前面的程序执行完</p>
+</li>
+<li>
+<p>异步:非阻塞,当前程序是否执行与之前的无关</p>
+</li>
+<li>
+<p>多程序之间的关系</p>
+</li>
+<li>
+<p>并行 :多个程序同时执行</p>
+</li>
+<li>
+<p>串行: 多程序之间 a--->b---->c</p>
+</li>
+<li>
+<p>解构赋值(正常声明)</p>
+</li>
+<li>
+<p>通过数组 [ ] 解构进行赋值</p>
+</li>
+<li>
+<p>转为数组</p>
+</li>
+<li>
+<p>通过对象 { } 解构进行赋值</p>
+</li>
+<li>
+<p>转为对象</p>
+</li>
+<li>
+<p>优点</p>
+</li>
+<li>
+<p>两个数交换时直接[x,y]=[y,x]</p>
+</li>
+<li>
+<p>可同时返回多个 return 值</p>
+</li>
+<li>
+<p>传参时不用考虑传参的顺序,{}内的顺序随意</p>
+<ul>
+<li>{ age , sex, name }</li>
+</ul>
+</li>
+<li>
+<p>函数传入的参数可以带有默认值</p>
+<ul>
+<li>
+<p>{ name, sex=555,age=0}</p>
+</li>
+<li>
+<p>有时函数在我不传某个参数时候需要一个默认值,以此来解决问题</p>
+</li>
+</ul>
+</li>
+<li>
+<p>模板字符串</p>
+</li>
+<li>
+<p>两个反双引号 ` `</p>
+</li>
+<li>
+<p>内容之中使用${ } 来表示字符串中的变量</p>
+</li>
+<li>
+<p>展开运算符</p>
+</li>
+<li>
+<p>... 展开运算符</p>
+</li>
+<li>
+<p>可以将数组展开以数字形式</p>
+</li>
+<li>
+<p>将伪数组以数组的方式展开</p>
+</li>
+</ul>
+<h3>ECMA6 新增方法</h3>
+<ul>
+<li>
+<p>将伪数组转为数组</p>
+</li>
+<li>
+<p>...伪数组</p>
+</li>
+<li>
+<p>Arry.form(伪数组)</p>
+</li>
+<li>
+<p>官方方法,通过委托实现</p>
+<ul>
+<li>Arry.prototype.slice.call( 伪数组,0 )</li>
+</ul>
+</li>
+<li>
+<p>Object</p>
+</li>
+<li>
+<p><code>Object.keys( )</code> 以数组的形式返回对象的属性</p>
+</li>
+<li>
+<p><code>Object.values( )</code> 以数组的形式返回对象的值</p>
+</li>
+<li>
+<p><code>Objict.assign(z,x,c,v,b</code>) 对象合并之后并入第一个,浅拷贝内部的数组对象只会拷贝地址</p>
+</li>
+<li>
+<p>新增数组方法</p>
+</li>
+<li>
+<p>.find()</p>
+<ul>
+<li>查找符合条件的元素,只会输出第一个</li>
+</ul>
+</li>
+<li>
+<p>.findIndex ( ) 产找符合条件的元素的下标,返回第一个</p>
+</li>
+<li>
+<p>.conpyWithin( x,y,z )</p>
+<ul>
+<li>
+<p>x 需要赋值的开始位置</p>
+</li>
+<li>
+<p>y 复制的开始位置</p>
+</li>
+<li>
+<p>z 复制的结束位置(不包括)</p>
+</li>
+<li>
+<p>xyz 均为下标 此方法影响原数组</p>
+</li>
+</ul>
+</li>
+<li>
+<p>不影响原数组</p>
+</li>
+<li>
+<p>深拷贝</p>
+</li>
+<li>
+<p>对象 1=JSON.parse(JSON.stringify( 对象 1))</p>
+</li>
+<li>
+<p>通过递归实现</p>
+<blockquote>
+<ul>
+<li>//使用递归的方式实现数组、对象的深拷贝</li>
+</ul>
+<p>function deepClone1(obj) {<br>
+//判断拷贝的要进行深拷贝的是数组还是对象，是数组的话进行数组拷贝，对象的话进行对象拷贝
+var objClone = Array.isArray(obj) ? [] : {};<br>
+//进行深拷贝的不能为空，并且是对象或者是<br>
+if (obj &#x26;&#x26; typeof obj === "object") {<br>
+for (key in obj) {<br>
+//判断 obj 中是否有 key 这个键<br>
+if (obj.hasOwnProperty(key)) {<br>
+if (obj[key] &#x26;&#x26; typeof obj[key] === "object") {<br>
+objClone[key] = deepClone1(obj[key]);<br>
+} else {<br>
+objClone[key] = obj[key];<br>
+}<br>
+}<br>
+}<br>
+}<br>
+return objClone;<br>
+}</p>
+</blockquote>
+</li>
+<li>
+<p>Set</p>
+</li>
+<li>
+<p>声明</p>
+<ul>
+<li>let set=new Set()</li>
+</ul>
+</li>
+<li>
+<p>赋值</p>
+<ul>
+<li>
+<p>set.add( )</p>
+</li>
+<li>
+<p>let set= new Set( [ 1,2,3,'str' ] )</p>
+</li>
+</ul>
+</li>
+<li>
+<p>方法</p>
+<ul>
+<li>
+<p>set.key() 返回键名的遍历器</p>
+</li>
+<li>
+<p>set.values() 返回键值的遍历器</p>
+</li>
+<li>
+<p>set.entries() 返回键值对的遍历器</p>
+</li>
+</ul>
+<p>• [ key,value] of set.entries() 输出 keyvalue</p>
+<p>• item of set.entries() 输出 数组形式[key,value]</p>
+</li>
+<li>
+<p>key=value</p>
+<ul>
+<li>集合内不会有相同的值出现</li>
+</ul>
+<p>• 数组去重</p>
+<p>• 1. new Set( arr ) 数组转换为集合</p>
+<p>• 2. ...new Set( arr ) 集合拆分展开</p>
+<p>• [...new Set( arr )] 进行数组解构转为数组</p>
+</li>
+<li>
+<p>Map</p>
+</li>
+<li>
+<p>声明 let map= new Map();</p>
+</li>
+<li>
+<p>赋值</p>
+<ul>
+<li>
+<p>map.set('key', 'value' )</p>
+</li>
+<li>
+<p>let map = new Map([<br>
+['name', '张三'],<br>
+['title', 'Author']<br>
+]);</p>
+</li>
+</ul>
+</li>
+<li>
+<p>获取单个值 map.get('key') 通过键直接指向值</p>
+</li>
+<li>
+<p>便利 for of 通过 key 可直接遍历出键值结构(数组形式输出)</p>
+</li>
+<li>
+<p>遍历方法</p>
+</li>
+<li>
+<p>数组</p>
+<ul>
+<li>
+<p>for</p>
+</li>
+<li>
+<p>forEach</p>
+</li>
+<li>
+<p>forin</p>
+</li>
+<li>
+<p>forof</p>
+</li>
+</ul>
+</li>
+<li>
+<p>对象</p>
+<ul>
+<li>forin</li>
+</ul>
+</li>
+<li>
+<p>Promis</p>
+</li>
+</ul>
+<pre><code class="language-var">   new Promise(function(resolve, reject){
+   if(state == 1){
+   resolve("成功");
+   }else{
+   reject("失败");
+   }
+   }).then(function(msg){
+   console.log("then：" + msg);
+   }).catch(function(msg){
+   console.log("catch：" + msg);
+
+   })
+</code></pre>
+<ul>
+<li>
+<p>其中 resolve 和 reject 都是函数调用 resolve 代表正常,reject 时出现异常时调用的,可以只写一个</p>
+<ul>
+<li>调用 resolve 时执行 then(........)</li>
+</ul>
+</li>
+</ul></div></main><div class="layout_backToHome__O1iOQ"><a href="/">← Back to home</a></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"postData":{"id":"ecma5-6","title":"ECMA5-6部分常用知识","date":"2021-04-27","categories":["Notes"],"tags":["JavaScript","JSON"],"contentHtml":"\u003ch3\u003eECMA5\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eforeach 遍历\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003efilter 找出满足条件的项\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003emap 把数组的每一项进行数学运算\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eJOSN 方法\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eJOSN.parse\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e是将 json 格式的字符串转换为 js 的对象\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eJOSN.stringfy\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e是将 对象或者数组转换成 json 格式的字符串\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eTHIS\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e函数内部关键字\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethis 指向只与调用者有关 有明确调用对象时指向事件源或调用者,没有时指向 window\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e强制改变 this 指向的方法\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e函数.call( '新的指向' , 第一个参数 )\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e函数.apply ( '指向' , [ 参数 ])\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e• 数组内存放需要传入的参数\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e函数 . bind( ' 指向 ' )( 参数)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e• 第二个中括号内存放参数\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e配合箭头函数使用\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003earray.forEach(item =\u003eitem);\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003earr.filter(item=\u003eitem\u003e2);\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003earr.map(item =\u003e item * 2);\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet 和 const(定义变量)关键字\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet、const 和 var 的区别\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet 和 const 不允许重复声明变量\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet 和 const 不会预解析(变量提升)暂时死区\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet 和 const 声明的变量两个 { } 之间为它的作用域\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet 和 const 的区别\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet 声明变量之后可以改变值,const 不能(const 用来声明常量)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet 声明的时候可以不赋值,const 声明时必须赋值\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e箭头函数\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e语法: (函数的形参)=\u003e{ 函数体内要哦执行的代码}或者时 return 的值\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e箭头函数的特殊性\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e箭头函数内没有 this,箭头函数内的 this 是上一层函数中的 this\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e箭头函数内没有 arguements 这个参数集合\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e函数只有一个参数是可以不写(),大于一个时必须写\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e函数体只有一行时可以不写 return 并且会自动返回 return,其余需要写全\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e多线程\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e程序的运行状态\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e同步 : 阻塞.当前程序要执行,必须等前面的程序执行完\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e异步:非阻塞,当前程序是否执行与之前的无关\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e多程序之间的关系\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e并行 :多个程序同时执行\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e串行: 多程序之间 a---\u003eb----\u003ec\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e解构赋值(正常声明)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e通过数组 [ ] 解构进行赋值\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e转为数组\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e通过对象 { } 解构进行赋值\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e转为对象\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e优点\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e两个数交换时直接[x,y]=[y,x]\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e可同时返回多个 return 值\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e传参时不用考虑传参的顺序,{}内的顺序随意\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e{ age , sex, name }\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e函数传入的参数可以带有默认值\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e{ name, sex=555,age=0}\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e有时函数在我不传某个参数时候需要一个默认值,以此来解决问题\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e模板字符串\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e两个反双引号 ` `\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e内容之中使用${ } 来表示字符串中的变量\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e展开运算符\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e... 展开运算符\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e可以将数组展开以数字形式\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e将伪数组以数组的方式展开\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eECMA6 新增方法\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e将伪数组转为数组\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e...伪数组\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eArry.form(伪数组)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e官方方法,通过委托实现\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eArry.prototype.slice.call( 伪数组,0 )\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eObject\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eObject.keys( )\u003c/code\u003e 以数组的形式返回对象的属性\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eObject.values( )\u003c/code\u003e 以数组的形式返回对象的值\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eObjict.assign(z,x,c,v,b\u003c/code\u003e) 对象合并之后并入第一个,浅拷贝内部的数组对象只会拷贝地址\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e新增数组方法\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e.find()\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e查找符合条件的元素,只会输出第一个\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e.findIndex ( ) 产找符合条件的元素的下标,返回第一个\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e.conpyWithin( x,y,z )\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003ex 需要赋值的开始位置\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ey 复制的开始位置\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ez 复制的结束位置(不包括)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003exyz 均为下标 此方法影响原数组\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e不影响原数组\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e深拷贝\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e对象 1=JSON.parse(JSON.stringify( 对象 1))\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e通过递归实现\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cul\u003e\n\u003cli\u003e//使用递归的方式实现数组、对象的深拷贝\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003efunction deepClone1(obj) {\u003cbr\u003e\n//判断拷贝的要进行深拷贝的是数组还是对象，是数组的话进行数组拷贝，对象的话进行对象拷贝\nvar objClone = Array.isArray(obj) ? [] : {};\u003cbr\u003e\n//进行深拷贝的不能为空，并且是对象或者是\u003cbr\u003e\nif (obj \u0026#x26;\u0026#x26; typeof obj === \"object\") {\u003cbr\u003e\nfor (key in obj) {\u003cbr\u003e\n//判断 obj 中是否有 key 这个键\u003cbr\u003e\nif (obj.hasOwnProperty(key)) {\u003cbr\u003e\nif (obj[key] \u0026#x26;\u0026#x26; typeof obj[key] === \"object\") {\u003cbr\u003e\nobjClone[key] = deepClone1(obj[key]);\u003cbr\u003e\n} else {\u003cbr\u003e\nobjClone[key] = obj[key];\u003cbr\u003e\n}\u003cbr\u003e\n}\u003cbr\u003e\n}\u003cbr\u003e\n}\u003cbr\u003e\nreturn objClone;\u003cbr\u003e\n}\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eSet\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e声明\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003elet set=new Set()\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e赋值\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eset.add( )\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet set= new Set( [ 1,2,3,'str' ] )\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e方法\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eset.key() 返回键名的遍历器\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eset.values() 返回键值的遍历器\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eset.entries() 返回键值对的遍历器\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e• [ key,value] of set.entries() 输出 keyvalue\u003c/p\u003e\n\u003cp\u003e• item of set.entries() 输出 数组形式[key,value]\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ekey=value\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e集合内不会有相同的值出现\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e• 数组去重\u003c/p\u003e\n\u003cp\u003e• 1. new Set( arr ) 数组转换为集合\u003c/p\u003e\n\u003cp\u003e• 2. ...new Set( arr ) 集合拆分展开\u003c/p\u003e\n\u003cp\u003e• [...new Set( arr )] 进行数组解构转为数组\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eMap\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e声明 let map= new Map();\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e赋值\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003emap.set('key', 'value' )\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elet map = new Map([\u003cbr\u003e\n['name', '张三'],\u003cbr\u003e\n['title', 'Author']\u003cbr\u003e\n]);\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e获取单个值 map.get('key') 通过键直接指向值\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e便利 for of 通过 key 可直接遍历出键值结构(数组形式输出)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e遍历方法\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e数组\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003efor\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eforEach\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eforin\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eforof\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e对象\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eforin\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ePromis\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"language-var\"\u003e   new Promise(function(resolve, reject){\n   if(state == 1){\n   resolve(\"成功\");\n   }else{\n   reject(\"失败\");\n   }\n   }).then(function(msg){\n   console.log(\"then：\" + msg);\n   }).catch(function(msg){\n   console.log(\"catch：\" + msg);\n\n   })\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e其中 resolve 和 reject 都是函数调用 resolve 代表正常,reject 时出现异常时调用的,可以只写一个\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e调用 resolve 时执行 then(........)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e"}},"__N_SSG":true},"page":"/posts/[id]","query":{"id":"ecma5-6"},"buildId":"F4dKJ982Y4flEsO0BumU9","assetPrefix":".","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
