@@ -1,11 +1,15 @@
+@import "vis-network/styles/vis-network.min.css"; /* 引入样式 */
+
 html,
-body {
+body, #__next {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  width: 100vw;
+  height: 100vh;
 }
 
 * {

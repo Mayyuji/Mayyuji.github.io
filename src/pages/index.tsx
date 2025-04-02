@@ -1,19 +1,67 @@
 import Head from "next/head";
-import Link from 'next/link'
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import dynamic from "next/dynamic";
+
+import { siteTitle } from "../components/layout";
 import { getSortedPostsData } from '../lib/post'
 
-import { PostMeta } from "@/ts/posts";
+// import { PostMeta } from "@/ts/posts";
 
+const Network = dynamic(
+  () => import("@/components/network"),
+  { ssr: false, loading: () => <p>Loading...</p> }
+);
 
-export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
+// export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
+export default function Home() {
+  const nodes = [
+    { id: 1, label: "Node 1", color: "#FF6B6B", level: 1 },
+    { id: 2, label: "Node 2", color: "#4ECDC4", level: 1 },
+    { id: 3, label: "Node 3", color: "#45B7D1", level: 1 },
+    { id: 4, label: "Node 4", color: "#4517D1", level: 1 },
+    { id: 5, label: "Node 5", color: "#15B7D1", level: 1 },
+    { id: 6, label: "Node 6", color: "#49B7D1", level: 1 },
+  ];
+
+  const edges = [
+    { from: 2, to: 1 },
+    { from: 3, to: 1 },
+    { from: 4, to: 1 },
+    { from: 5, to: 1 },
+    { from: 6, to: 1 },
+    { from: 7, to: 1 },
+  ];
+
+  const options = {
+    nodes: {
+      shape: "circle",
+      font: { size: 20 },
+      mass: 2,
+    },
+    edges: {
+      arrows: { to: false, },
+      length: 100,
+      smooth: {
+        enabled: true,
+        type: "dynamic",
+        roundness: 1,
+      }
+    },
+    physics: {
+      enabled: true,
+    },
+    interaction: {
+      dragView: true,
+      hover: true
+    },
+  };
+
   return (
-    <Layout home>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <Network nodes={nodes} edges={edges} options={options} />
+      {/* <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
@@ -35,8 +83,8 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
           </li>
           ))}
         </ul>
-      </section>
-    </Layout>
+      </section> */}
+    </>
   );
 }
 
