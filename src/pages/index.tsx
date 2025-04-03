@@ -4,22 +4,98 @@ import dynamic from "next/dynamic";
 import { siteTitle } from "../components/layout";
 import { getSortedPostsData } from '../lib/post'
 
-// import { PostMeta } from "@/ts/posts";
+const NetworkLoading = () => (
+  <div style={{
+    width: '100%',
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#f5f5f5'
+  }}>
+    <div style={{
+      padding: '20px',
+      borderRadius: '8px',
+      background: 'white',
+      boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+    }}>
+      <p style={{ margin: 0 }}>正在加载网络图...</p>
+    </div>
+  </div>
+);
 
 const Network = dynamic(
   () => import("@/components/network"),
-  { ssr: false, loading: () => <p>Loading...</p> }
+  {
+    ssr: false,
+    loading: NetworkLoading,
+  }
 );
 
 // export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 export default function Home() {
   const nodes = [
-    { id: 1, label: "Node 1", color: "#FF6B6B", level: 1 },
-    { id: 2, label: "Node 2", color: "#4ECDC4", level: 1 },
-    { id: 3, label: "Node 3", color: "#45B7D1", level: 1 },
-    { id: 4, label: "Node 4", color: "#4517D1", level: 1 },
-    { id: 5, label: "Node 5", color: "#15B7D1", level: 1 },
-    { id: 6, label: "Node 6", color: "#49B7D1", level: 1 },
+    {
+      id: 1,
+      label: "Home",
+      shape: "custom",
+      ctxRenderer: ({ ctx, x, y, style }: { ctx: CanvasRenderingContext2D; x: number; y: number; style: { size: number; color?: string; borderWidth?: number; borderColor?: string } }) => {
+        const r = style.size;
+        const drawNode = () => {
+          const width = 2 * r;   // 节点宽度
+          const height = 2 * r;  // 节点高度
+
+          // 以 (x, y) 为中心，计算矩形左上角坐标
+          const left = x - width / 2;
+          const top = y - height / 2;
+
+          // 绘制墙面（矩形）
+          ctx.beginPath();
+          ctx.fillStyle = "#FFE4B5";
+          ctx.strokeStyle = "#8B4513";
+          ctx.rect(left, top, width, 40); // 使用基于中心的坐标
+          ctx.fill();
+          ctx.stroke();
+
+          // 绘制屋顶（三角形）
+          ctx.beginPath();
+          ctx.fillStyle = "#8B4513";
+          ctx.moveTo(left - width * 0.2, top);          // 左顶点
+          ctx.lineTo(left + width * 1.2, top);          // 右顶点
+          ctx.lineTo(x, top - height * 0.5);            // 顶部顶点（直接使用中心 x）
+          ctx.closePath();
+          ctx.fill();
+
+          // 绘制门（矩形）
+          ctx.fillStyle = "#8B4513";
+          ctx.fillRect(
+            left + 6,
+            top + 15,
+            width * 0.4,
+            height * 0.5
+          );
+
+          // 绘制窗户（方形）
+          ctx.beginPath();
+          ctx.fillStyle = "#87CEEB";
+          ctx.fillRect(
+            left + width * 0.6,
+            top + height * 0.1,
+            width * 0.3,
+            height * 0.3
+          );
+          ctx.fill();
+        };
+        return {
+          drawNode,
+          nodeDimensions: { width: 2 * r, height: 2 * r },
+        };
+      },
+    },
+    { id: 2, label: "Node 2", color: "#4ECDC4", level: 1, shape: "diamond" },
+    { id: 3, label: "Node 3", color: "#45B7D1", level: 1, shape: "box" },
+    { id: 4, label: "Node 4", color: "#4517D1", level: 1, shape: "star" },
+    { id: 5, label: "Node 5", color: "#15B7D1", level: 1, shape: "triangleDown" },
   ];
 
   const edges = [
@@ -27,8 +103,6 @@ export default function Home() {
     { from: 3, to: 1 },
     { from: 4, to: 1 },
     { from: 5, to: 1 },
-    { from: 6, to: 1 },
-    { from: 7, to: 1 },
   ];
 
   const options = {
@@ -61,29 +135,6 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <Network nodes={nodes} edges={edges} options={options} />
-      {/* <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://www.nextjs.cn/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
-              {title}
-            </Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              {date}
-            </small>
-          </li>
-          ))}
-        </ul>
-      </section> */}
     </>
   );
 }

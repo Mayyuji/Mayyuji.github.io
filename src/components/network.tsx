@@ -94,22 +94,13 @@ export default function NetworkComponent({
       showMenuRef.current = true;
       nodesDataset.update([
         {
-          // 物理节点防越界
-          id: 'self-1',
-          label: "",
-          fixed: true,
-          level: 1, physics: true, chosen: false,
-          mass: 0.5, x: -415, y: -450,
-          shape: 'text',
-        },
-        {
           // 目标节点
           ...activeNode,
           fixed: true,
           widthConstraint: {
             minimum: 100,
           },
-          mass: 0.5,
+          mass: 0.1,
           x: -510,
           y: -350,
         }, {
@@ -122,16 +113,24 @@ export default function NetworkComponent({
           ...basicNodes[1],
           label: "<b><i>返回\n<b><i>切换</i></b>",
           physics: false,
-          mass: 0,
+          mass: 0.1,
           x: -500,
           y: 200
         }
       ]);
       edgesDataset.update(Object.assign(basicEdges[0], { label: '拖拽放入节点' }));
+      // 防止乱飞
+      networkRef.current?.setOptions({ physics: { wind: {
+        x: -0.3,
+        y: 0.2
+      } } });
     }
 
     function backHome() {
-      nodesDataset.remove('self-1');
+      networkRef.current?.setOptions({ physics: { wind: {
+        x: 0,
+        y: 0
+      } } });
       if (activeNodeRef.current && activeNodeRef.current!.id) {
         nodesDataset.remove(activeNodeRef.current!.id);
         activeNodeRef.current = null;
