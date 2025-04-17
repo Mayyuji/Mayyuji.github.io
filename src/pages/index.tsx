@@ -1,8 +1,11 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import { Node } from "vis-network";
+import { useRef } from "react";
 
 import { siteTitle } from "../components/layout";
 import { getSortedPostsData } from '../lib/post'
+import Posts from "../components/posts";
 
 const NetworkLoading = () => (
   <div style={{
@@ -92,17 +95,15 @@ export default function Home() {
         };
       },
     },
-    { id: 2, label: "Node 2", color: "#4ECDC4", level: 1, shape: "diamond" },
-    { id: 3, label: "Node 3", color: "#45B7D1", level: 1, shape: "box" },
-    { id: 4, label: "Node 4", color: "#4517D1", level: 1, shape: "star" },
-    { id: 5, label: "Node 5", color: "#15B7D1", level: 1, shape: "triangleDown" },
+    { id: 2, label: "文章", color: "#4ECDC4", level: 1, shape: "diamond" },
+    { id: 3, label: "关于本站", color: "#15B7D1", level: 1, shape: "star" },
+    { id: 4, label: "标签", color: "#25B7D1", level: 1, shape: "triangleDown" },
   ];
 
   const edges = [
     { from: 2, to: 1 },
     { from: 3, to: 1 },
     { from: 4, to: 1 },
-    { from: 5, to: 1 },
   ];
 
   const options = {
@@ -128,13 +129,21 @@ export default function Home() {
       hover: true
     },
   };
+  
+
+
+  const loadNote = (node: Node) => {
+    // 判断node.id 在NodeType中是否存在
+    console.log('node',node)
+  }
 
   return (
     <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Network nodes={nodes} edges={edges} options={options} />
+      <Network nodes={nodes} edges={edges} options={options} loadNote={loadNote} />
+      {/* <Posts /> */}
     </>
   );
 }
