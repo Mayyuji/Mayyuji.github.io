@@ -5,12 +5,23 @@ import { Network, Options, Edge, Node } from "vis-network";
 import { useRouter } from 'next/router';
 import { DataSet } from "vis-data";
 
+enum ChildRefType {
+  NODE = 'NODE',
+  EDGE = 'EDGE'
+}
+
+export interface NetworkChildRef {
+  add: (type: ChildRefType, obj: (Node | Node[]) & (Edge | Edge[])) => void | unknown;
+  update: (type: ChildRefType, obj: (Node | Node[]) & (Edge | Edge[])) => void | unknown;
+  remove: (type: ChildRefType, obj: (Node | Node[]) & (Edge | Edge[])) => void | unknown;
+}
 
 interface NetworkComponentProps {
   nodes: Node[];
   edges: Edge[];
   options?: Options;
   loadNote: (node: Node) => void; // 处理节点的函数
+  ref: React.RefObject<NetworkChildRef | null>;
 }
 
 enum NodeType {
@@ -21,7 +32,7 @@ enum NodeType {
 }
 
 export default function NetworkComponent(
-  { nodes, edges, options, loadNote }: NetworkComponentProps,
+  { nodes, edges, options, loadNote, ref }: NetworkComponentProps,
 ) {
   const containerRef = useRef<HTMLDivElement>(null);
   const networkRef = useRef<Network | null>(null);
@@ -30,11 +41,14 @@ export default function NetworkComponent(
   const dragActiveRef = useRef<boolean | null>(null); // 用于判断鼠标是否拖拽节点
   const targetNodeRef = useRef<Node | null>(null); // 用于存储拖拽目标节点
   const activeNodeRef = useRef<Node | null>(null); // 用于存储当前激活的菜单节点
-  const showMenuRef = useRef<boolean | null>(null);
-  const activeType = useRef<string>('');
+  const showMenuRef = useRef<boolean | null>(null); // 菜单ref
+  const routerLodingRef = useRef<boolean | null>(null);
 
 
   const router = useRouter();
+  // 初始化 DataSet
+  const nodesDataset = useRef<DataSet<Node>>(null);
+  const edgesDataset = useRef<DataSet<Edge>>(null);
 
   useEffect(() => {
     const basicNodes: Node[] = [
@@ -94,19 +108,18 @@ export default function NetworkComponent(
       },
     ];
 
+    nodesDataset.current = new DataSet<Node>(nodes);
+    edgesDataset.current = new DataSet<Edge>(edges);
+
     if (!containerRef.current) return;
 
-    // 初始化 DataSet
-    const nodesDataset = new DataSet<Node>(nodes);
-    const edgesDataset = new DataSet<Edge>(edges);
-
-    nodesDataset.add(basicNodes);
-    edgesDataset.add(basicEdges);
+    nodesDataset.current.add(basicNodes);
+    edgesDataset.current.add(basicEdges);
 
     // 创建网络图
     networkRef.current = new Network(
       containerRef.current,
-      { nodes: nodesDataset, edges: edgesDataset },
+      { nodes: nodesDataset.current, edges: edgesDataset.current },
       options || {}
     );
 
@@ -117,8 +130,7 @@ export default function NetworkComponent(
         return
       }
       if (node.id && node.id in NodeType) {
-        activeType.current = node.id as string;
-        const newUrl = `${window.location.pathname}?type=${activeType.current}`;
+        const newUrl = `${window.location.pathname}?type=${node.id}`;
         window.history.replaceState({ ...window.history.state, as: newUrl }, '', newUrl);
       }
     }
@@ -128,7 +140,7 @@ export default function NetworkComponent(
       loadNote(activeNode);
       // 节点处理
       if (activeNodeRef.current?.id) {
-        nodesDataset.update({
+        nodesDataset.current?.update({
           id: activeNodeRef.current.id,
           mass: 1,
           widthConstraint: false,
@@ -137,7 +149,7 @@ export default function NetworkComponent(
       }
       activeNodeRef.current = activeNode;
       showMenuRef.current = true;
-      nodesDataset.update([
+      nodesDataset.current?.update([
         {
           // 目标节点
           ...activeNode,
@@ -165,7 +177,7 @@ export default function NetworkComponent(
           y: 200,
         },
       ]);
-      edgesDataset.update(
+      edgesDataset.current?.update(
         Object.assign(basicEdges[0], { label: "拖拽放入节点" })
       );
       // 防止乱飞
@@ -189,18 +201,18 @@ export default function NetworkComponent(
         },
       });
       if (activeNodeRef.current && activeNodeRef.current!.id) {
-        nodesDataset.remove(activeNodeRef.current!.id);
+        nodesDataset.current?.remove(activeNodeRef.current!.id);
         activeNodeRef.current = null;
       }
-      nodesDataset.update([...nodes, ...basicNodes]);
-      edgesDataset.update([...edges, ...basicEdges]);
+      nodesDataset.current?.update([...nodes, ...basicNodes]);
+      edgesDataset.current?.update([...edges, ...basicEdges]);
       networkRef.current?.moveNode(1, 310, -60);
       networkRef.current?.moveTo({ position: { x: 200, y: 0 } });
       cookType({ id: 1 });
     }
 
     networkRef.current?.on("dragStart", (params) => {
-      const targetNode = nodesDataset.get(params.nodes[0]) as Node;
+      const targetNode = nodesDataset.current?.get(params.nodes[0]) as Node;
       if (!Array.isArray(targetNode) && targetNode.id !== 999) {
         targetNodeRef.current = targetNode;
         dragActiveRef.current = true;
@@ -208,7 +220,7 @@ export default function NetworkComponent(
     });
 
     networkRef.current?.on("dragEnd", (params) => {
-      const targetNode = nodesDataset.get(params.nodes[0]) as Node;
+      const targetNode = nodesDataset.current?.get(params.nodes[0]) as Node;
       if (!Array.isArray(targetNode) && targetNode.id !== 999) {
         dragActiveRef.current = false;
         if (hoverActiveRef.current) {
@@ -238,7 +250,7 @@ export default function NetworkComponent(
       if (params.node === 999) {
         hoverActiveRef.current = true;
         if (targetNodeRef.current && dragActiveRef.current) {
-          nodesDataset.update([
+          nodesDataset.current?.update([
             {
               id: 999,
               label: targetNodeRef.current.label,
@@ -256,7 +268,7 @@ export default function NetworkComponent(
       if (params.node === 999) {
         hoverActiveRef.current = false;
         if (dragActiveRef.current) {
-          nodesDataset.update([
+          nodesDataset.current?.update([
             {
               id: 999,
               label: showMenuRef.current
@@ -275,10 +287,28 @@ export default function NetworkComponent(
       }
     });
 
+    ref.current = {
+      add: (type, obj) => {
+        const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
+        dataset?.add(obj);
+      },
+      update: (type, obj) => {
+        const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
+        dataset?.update(obj);
+      },
+      remove: (type, obj) => {
+        const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
+        dataset?.remove(obj);
+      }
+    }
+
     if (router.query.type) {
+      if (routerLodingRef.current) return
+      routerLodingRef.current = true;
       const type = router.query.type as string;
       nodes.filter((node) => {
         if (node.id === Number(type)) {
+          routerLodingRef.current = false;
           showSecondMenu(node);
         }
       });
@@ -290,7 +320,7 @@ export default function NetworkComponent(
         networkRef.current.destroy();
       }
     };
-  }, [nodes, edges, options, loadNote, router]);
+  }, [nodes, edges, options, loadNote, router.query, router.isReady, edgesDataset, nodesDataset, ref]);
 
   return <div ref={containerRef} style={{ width: "100%", height: "100%" }} />
 }

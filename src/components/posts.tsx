@@ -1,26 +1,16 @@
 import styles from './posts.module.css'
 
-interface NoteProps {
-  title?: string;
-  content?: string;
-  onTitleChange?: (title: string) => void;
+export interface ChildRef {
+  handle: () => void | unknown;
 }
 
-const Note: React.FC<NoteProps> = ({
-  title,
-  content,
-  onTitleChange = () => {},
-}) => {
-  return (
-    <div className={styles.note}>
-      <input
-        type="text"
-        value={title}
-        onChange={(e) => onTitleChange(e.target.value)}
-      />
-      {content}
-    </div>
-  );
-};
+export default function Posts({ ref }: { ref: React.RefObject<ChildRef | null> }) {
+  const handle = () => {
+    console.log(123132);
+  }
+  // 将方法挂载到 ref 上
+  ref.current = { handle };
+  return <div className={styles.posts}></div>
+}
 
-export default Note;
+

@@ -5,7 +5,8 @@ import { useRef } from "react";
 
 import { siteTitle } from "../components/layout";
 import { getSortedPostsData } from '../lib/post'
-import Posts from "../components/posts";
+import Posts, { ChildRef } from "../components/posts";
+import { NetworkChildRef } from "../components/network";
 
 const NetworkLoading = () => (
   <div style={{
@@ -133,8 +134,19 @@ export default function Home() {
 
 
   const loadNote = (node: Node) => {
-    // 判断node.id 在NodeType中是否存在
-    console.log('node',node)
+    if (node.id === 2) {
+      // 文章
+      console.log('node',node)
+    }
+  }
+
+  const networkRef = useRef<NetworkChildRef>(null)
+  const childRef = useRef<ChildRef>(null)
+  
+  // 调用子组件方法
+  const getChildData = () => {
+    const data = childRef.current?.handle()
+    console.log('Received:', data)
   }
 
   return (
@@ -142,8 +154,9 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Network nodes={nodes} edges={edges} options={options} loadNote={loadNote} />
-      {/* <Posts /> */}
+      <Network ref={networkRef} nodes={nodes} edges={edges} options={options} loadNote={loadNote} />
+      <button onClick={getChildData}>get data from child</button>
+      <Posts ref={childRef}/>
     </>
   );
 }
