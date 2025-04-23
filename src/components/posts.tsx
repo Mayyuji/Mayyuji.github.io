@@ -9,8 +9,10 @@ export default function Posts({ ref }: { ref: React.RefObject<ChildRef | null> }
     console.log(123132);
   }
   // 将方法挂载到 ref 上
-  ref.current = { handle };
-  return <div className={styles.posts}></div>
+  if (ref) {
+    ref.current = { handle };
+  }
+  return <div className={styles.posts}>123</div>
 }
 
 

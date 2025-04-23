@@ -1,7 +1,7 @@
 "use client"; // 标记为客户端组件（Next.js 13+）
 
 import { useEffect, useRef } from "react";
-import { Network, Options, Edge, Node } from "vis-network";
+import { Network, Options, Edge, Node, Position } from "vis-network";
 import { useRouter } from 'next/router';
 import { DataSet } from "vis-data";
 
@@ -20,7 +20,8 @@ interface NetworkComponentProps {
   nodes: Node[];
   edges: Edge[];
   options?: Options;
-  loadNote: (node: Node) => void; // 处理节点的函数
+  loadNote: (node: Node, position?: Position) => void; // 处理节点的函数
+  updateDOM: (position: Position) => void;  // 更新dom坐标方法
   ref: React.RefObject<NetworkChildRef | null>;
 }
 
@@ -32,7 +33,7 @@ enum NodeType {
 }
 
 export default function NetworkComponent(
-  { nodes, edges, options, loadNote, ref }: NetworkComponentProps,
+  { nodes, edges, options, loadNote, updateDOM,  ref }: NetworkComponentProps,
 ) {
   const containerRef = useRef<HTMLDivElement>(null);
   const networkRef = useRef<Network | null>(null);
@@ -42,8 +43,6 @@ export default function NetworkComponent(
   const targetNodeRef = useRef<Node | null>(null); // 用于存储拖拽目标节点
   const activeNodeRef = useRef<Node | null>(null); // 用于存储当前激活的菜单节点
   const showMenuRef = useRef<boolean | null>(null); // 菜单ref
-  const routerLodingRef = useRef<boolean | null>(null);
-
 
   const router = useRouter();
   // 初始化 DataSet
@@ -116,6 +115,9 @@ export default function NetworkComponent(
     nodesDataset.current.add(basicNodes);
     edgesDataset.current.add(basicEdges);
 
+    // 00参照点
+    nodesDataset.current?.add({ id: 5, x: 0, y: 0, fixed: true, physics: false, });
+
     // 创建网络图
     networkRef.current = new Network(
       containerRef.current,
@@ -135,9 +137,52 @@ export default function NetworkComponent(
       }
     }
 
+    const noteObj = {
+      load: (activeNode: Node) => {
+        networkRef.current?.setOptions({
+          interaction: {
+            zoomView: false,
+          }
+        });
+        // 添加文章挂载节点
+        nodesDataset.current?.add({
+          id: 22,
+          fixed: true,
+          label: "22",
+          mass: 1,
+          x: -240,
+          y: -350,
+        });
+        edgesDataset.current?.add({
+          id: '2-line',
+          from: 22,
+          to: 2,
+          chosen: false,
+          width: 2,
+          physics: true,
+        });
+        loadNote(activeNode, networkRef.current?.canvasToDOM({x: -240, y: -350}))
+      },
+      remove: () => {
+        console.log('移除文章');
+        networkRef.current?.setOptions({
+          interaction: {
+            zoomView: true,
+          }
+        });
+        edgesDataset.current?.remove('2-line');
+        nodesDataset.current?.remove(22);
+      }
+    }
+
+    function processChildren(activeNode: Node) {
+      // 2 文章 3 关于 4 标签
+      if (activeNode.id === 2) noteObj.load(activeNode);
+      // if (activeNodeRef.current?.id === 2) noteObj.remove();
+    }
+
     function showSecondMenu(activeNode: Node) {
       cookType(activeNode);
-      loadNote(activeNode);
       // 节点处理
       if (activeNodeRef.current?.id) {
         nodesDataset.current?.update({
@@ -180,7 +225,7 @@ export default function NetworkComponent(
       edgesDataset.current?.update(
         Object.assign(basicEdges[0], { label: "拖拽放入节点" })
       );
-      // 防止乱飞
+      // 向下的风 防止乱飞
       networkRef.current?.setOptions({
         physics: {
           wind: {
@@ -189,6 +234,8 @@ export default function NetworkComponent(
           },
         },
       });
+      // 加工当前活动节点的下级
+      processChildren(activeNode);
     }
 
     function backHome() {
@@ -217,6 +264,11 @@ export default function NetworkComponent(
         targetNodeRef.current = targetNode;
         dragActiveRef.current = true;
       }
+    });
+
+    networkRef.current?.on("dragging", (params) => {
+      // console.log('params',params)
+      updateDOM(params.pointer.DOM) 
     });
 
     networkRef.current?.on("dragEnd", (params) => {
@@ -287,28 +339,31 @@ export default function NetworkComponent(
       }
     });
 
-    ref.current = {
-      add: (type, obj) => {
-        const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
-        dataset?.add(obj);
-      },
-      update: (type, obj) => {
-        const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
-        dataset?.update(obj);
-      },
-      remove: (type, obj) => {
-        const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
-        dataset?.remove(obj);
+    networkRef.current.on("doubleClick", (params) => {
+      console.log('params', params)
+    });
+
+    if (ref) {
+      ref.current = {
+        add: (type, obj) => {
+          const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
+          dataset?.add(obj);
+        },
+        update: (type, obj) => {
+          const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
+          dataset?.update(obj);
+        },
+        remove: (type, obj) => {
+          const dataset = type === ChildRefType.NODE ? nodesDataset.current : edgesDataset.current;
+          dataset?.remove(obj);
+        }
       }
     }
 
     if (router.query.type) {
-      if (routerLodingRef.current) return
-      routerLodingRef.current = true;
       const type = router.query.type as string;
       nodes.filter((node) => {
         if (node.id === Number(type)) {
-          routerLodingRef.current = false;
           showSecondMenu(node);
         }
       });
@@ -320,7 +375,7 @@ export default function NetworkComponent(
         networkRef.current.destroy();
       }
     };
-  }, [nodes, edges, options, loadNote, router.query, router.isReady, edgesDataset, nodesDataset, ref]);
+  }, [nodes, edges, options, loadNote, updateDOM, router.query, edgesDataset, nodesDataset, ref]);
 
   return <div ref={containerRef} style={{ width: "100%", height: "100%" }} />
 }

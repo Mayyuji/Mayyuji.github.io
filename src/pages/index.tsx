@@ -1,6 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { Node } from "vis-network";
+import { Node, Position } from "vis-network";
 import { useRef } from "react";
 
 import { siteTitle } from "../components/layout";
@@ -130,18 +130,15 @@ export default function Home() {
       hover: true
     },
   };
-  
-
-
-  const loadNote = (node: Node) => {
-    if (node.id === 2) {
-      // 文章
-      console.log('node',node)
-    }
-  }
 
   const networkRef = useRef<NetworkChildRef>(null)
   const childRef = useRef<ChildRef>(null)
+
+  const loadNote = (node: Node, position?: Position) => {
+    console.log('node',node)
+    console.log('position',position)
+    // TODO 根据 node.id 加载对应的笔记
+  }
   
   // 调用子组件方法
   const getChildData = () => {
@@ -149,12 +146,17 @@ export default function Home() {
     console.log('Received:', data)
   }
 
+  // 更新坐标
+  const updateDOM = (position: Position) => {
+    console.log('position',position)
+  }
+
   return (
     <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Network ref={networkRef} nodes={nodes} edges={edges} options={options} loadNote={loadNote} />
+      <Network ref={networkRef} nodes={nodes} edges={edges} options={options} loadNote={loadNote} updateDOM={updateDOM}/>
       <button onClick={getChildData}>get data from child</button>
       <Posts ref={childRef}/>
     </>
