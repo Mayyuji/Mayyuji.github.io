@@ -1,0 +1,993 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#8DADFC"><meta name="author" content="Mayyuji"><meta name="copyright" content="Mayyuji"><meta name="generator" content="Hexo 5.4.2"><meta name="theme" content="hexo-theme-yun"><title>HTML+CSS笔记 | 兔儿的小窝</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_j5gk85dg4pf.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link rel="icon" href="/images/headicon.png"><link rel="mask-icon" href="/images/headicon.png" color="#8DADFC"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"mayyuji.github.io","root":"/","title":"兔儿的小窝~","version":"1.6.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","local_search":{"path":"/search.xml"},"fireworks":{"colors":["255,20,97","24,255,146","90,135,255","251,243,140"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><script src="//at.alicdn.com/t/font_2112560_4q0xnmt5m6.js" async></script><meta name="description" content="文件夹命名规则建议使用英文、数字、_ -, 不要有特殊字符(#$%@.?),不要有中文和空格 HTML 文档结构&lt;!DOCTYPEhtml&gt;文档声明，声明这是一个 html5,作用是告知浏览器这是一 个 html5 文档结构 &lt;html&gt;&lt;&#x2F;html&gt;根元素，一- 个文档有且只有一个根元素 &lt;head&gt;&lt;&#x2F;head&gt;页面的头部,放置页面的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML+CSS笔记">
+<meta property="og:url" content="https://mayyuji.github.io/2021/04/27/notes1/index.html">
+<meta property="og:site_name" content="兔儿的小窝">
+<meta property="og:description" content="文件夹命名规则建议使用英文、数字、_ -, 不要有特殊字符(#$%@.?),不要有中文和空格 HTML 文档结构&lt;!DOCTYPEhtml&gt;文档声明，声明这是一个 html5,作用是告知浏览器这是一 个 html5 文档结构 &lt;html&gt;&lt;&#x2F;html&gt;根元素，一- 个文档有且只有一个根元素 &lt;head&gt;&lt;&#x2F;head&gt;页面的头部,放置页面的">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-27T03:08:29.000Z">
+<meta property="article:modified_time" content="2025-06-09T01:30:25.578Z">
+<meta property="article:author" content="Mayyuji">
+<meta property="article:tag" content="HTMl">
+<meta property="article:tag" content="CSS">
+<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Mayyuji"><img width="96" loading="lazy" src="/images/tutou.jpg" alt="Mayyuji"><span class="site-author-status" title="console.log(..">🥳</span></a><div class="site-author-name"><a href="/about/">Mayyuji</a></div><span class="site-name">兔儿的小窝</span><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-daohang-yiguidang"></use></svg></span><span class="site-state-item-count">14</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-fenlei"></use></svg></span><span class="site-state-item-count">6</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg></span><span class="site-state-item-count">14</span></a></div></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=2455626085&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/Mayyuji" title="GitHub" target="_blank" style="color:#181717"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/165714495" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:2455626085@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/experiment/" title="实验室" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shiyanshi"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">文件夹命名规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML-%E6%96%87%E6%A1%A3%E7%BB%93%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text">HTML 文档结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">标签的语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">标签的属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML-%E6%A0%87%E7%AD%BE"><span class="toc-number">5.</span> <span class="toc-text">HTML 标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="toc-number">6.</span> <span class="toc-text">转义字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">7.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0"><span class="toc-number">8.</span> <span class="toc-text">表单元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-%E4%BB%8B%E7%BB%8D"><span class="toc-number">9.</span> <span class="toc-text">CSS 介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">10.</span> <span class="toc-text">选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E5%80%BC"><span class="toc-number">11.</span> <span class="toc-text">权值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Fscapture-%E4%B8%8E-PS-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">12.</span> <span class="toc-text">Fscapture 与 PS 的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7"><span class="toc-number">13.</span> <span class="toc-text">CSS 常用属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7"><span class="toc-number">13.1.</span> <span class="toc-text">文本属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7%E8%A1%A5%E5%85%85-PS%EF%BC%9A"><span class="toc-number">14.</span> <span class="toc-text">文本属性补充 PS：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E5%B1%9E%E6%80%A7"><span class="toc-number">14.1.</span> <span class="toc-text">列表属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%B9%E6%A1%86%E5%B1%9E%E6%80%A7"><span class="toc-number">14.2.</span> <span class="toc-text">边框属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE"><span class="toc-number">15.</span> <span class="toc-text">背景图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%AE%E5%8A%A8"><span class="toc-number">16.</span> <span class="toc-text">浮动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%86%E6%A8%A1%E5%9E%8B%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">17.</span> <span class="toc-text">框模型、盒子模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%96%E8%BE%B9%E8%B7%9D"><span class="toc-number">17.1.</span> <span class="toc-text">外边距</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E8%BE%B9%E8%B7%9D-padding"><span class="toc-number">18.</span> <span class="toc-text">内边距 padding</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%B1%9E%E6%80%A7"><span class="toc-number">19.</span> <span class="toc-text">文本溢出属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E7%B4%A0%E5%B5%8C%E5%A5%97"><span class="toc-number">20.</span> <span class="toc-text">元素嵌套</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E7%B4%A0%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">21.</span> <span class="toc-text">元素类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%AE%E6%8D%A2%E5%85%83%E7%B4%A0"><span class="toc-number">22.</span> <span class="toc-text">置换元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D"><span class="toc-number">23.</span> <span class="toc-text">定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D%E5%AE%9E%E7%8E%B0%E5%85%83%E7%B4%A0%E5%B1%85%E4%B8%AD"><span class="toc-number">24.</span> <span class="toc-text">定位实现元素居中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%8F%E6%98%8E%E5%BA%A6-%E7%94%A8%E4%BD%9C%E9%81%AE%E7%BD%A9%E5%B1%82"><span class="toc-number">25.</span> <span class="toc-text">透明度 用作遮罩层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%9A%E7%82%B9"><span class="toc-number">26.</span> <span class="toc-text">锚点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%BD%E5%BA%A6%E8%87%AA%E9%80%82%E5%BA%94"><span class="toc-number">27.</span> <span class="toc-text">宽度自适应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E7%B4%A0%E9%9A%90%E8%97%8F"><span class="toc-number">28.</span> <span class="toc-text">元素隐藏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%AA%E5%AF%B9%E8%B1%A1%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">29.</span> <span class="toc-text">伪对象选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D%E8%AE%BE%E7%BD%AE%E5%85%83%E7%B4%A0%E5%AE%BD%E9%AB%98"><span class="toc-number">30.</span> <span class="toc-text">定位设置元素宽高</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0%E7%9A%84%E8%A1%A5%E5%85%85"><span class="toc-number">31.</span> <span class="toc-text">表单元素的补充</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E5%B1%9E%E6%80%A7"><span class="toc-number">32.</span> <span class="toc-text">表格属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E8%A1%8C%E5%88%86%E7%BB%84"><span class="toc-number">32.1.</span> <span class="toc-text">表格行分组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%90%E5%8F%98"><span class="toc-number">33.</span> <span class="toc-text">渐变</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E6%B8%A1"><span class="toc-number">34.</span> <span class="toc-text">过渡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%89%8D%E7%BC%80"><span class="toc-number">35.</span> <span class="toc-text">浏览器前缀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2D"><span class="toc-number">36.</span> <span class="toc-text">2D</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E7%B4%A0%E5%B1%85%E4%B8%AD%E7%AC%AC%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">37.</span> <span class="toc-text">元素居中第三种方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3d"><span class="toc-number">38.</span> <span class="toc-text">3d</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB"><span class="toc-number">39.</span> <span class="toc-text">动画</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Html5-%E8%AF%AD%E6%B3%95"><span class="toc-number">40.</span> <span class="toc-text">Html5 语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#H5-%E6%96%B0%E5%A2%9E%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE"><span class="toc-number">41.</span> <span class="toc-text">H5 新增的语义化标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9D%97%E7%BA%A7"><span class="toc-number">41.1.</span> <span class="toc-text">块级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%8C%E5%86%85"><span class="toc-number">41.2.</span> <span class="toc-text">行内</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E5%92%8C%E9%9F%B3%E9%A2%91"><span class="toc-number">42.</span> <span class="toc-text">视频和音频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#H5-%E6%96%B0%E5%A2%9E%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0-%E5%9C%A8-form-%E5%86%85"><span class="toc-number">43.</span> <span class="toc-text">H5 新增表单元素 在 form 内</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#H5-%E6%96%B0%E5%A2%9E%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">44.</span> <span class="toc-text">H5 新增的属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E9%A1%BE"><span class="toc-number">45.</span> <span class="toc-text">回顾</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7"><span class="toc-number">46.</span> <span class="toc-text">渐进增强和优雅降级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css3-%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">47.</span> <span class="toc-text">css3 选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%B1%82%E7%BA%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">47.1.</span> <span class="toc-text">一、层级选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">47.2.</span> <span class="toc-text">二、属性选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">47.3.</span> <span class="toc-text">三、伪类选择器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%89%8D%E7%BC%80-1"><span class="toc-number">48.</span> <span class="toc-text">浏览器前缀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%92%E5%AD%90%E9%98%B4%E5%BD%B1"><span class="toc-number">49.</span> <span class="toc-text">盒子阴影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E9%98%B4%E5%BD%B1"><span class="toc-number">50.</span> <span class="toc-text">文本阴影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%8D%A2%E8%A1%8C%E7%9A%84%E7%9B%B8%E5%85%B3%E5%B1%9E%E6%80%A7"><span class="toc-number">51.</span> <span class="toc-text">文本换行的相关属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#font-face-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87"><span class="toc-number">52.</span> <span class="toc-text">@font-face 字体图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E7%9A%84%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7"><span class="toc-number">53.</span> <span class="toc-text">背景的新增属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%B9%E6%A1%86%E7%9A%84%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7"><span class="toc-number">54.</span> <span class="toc-text">边框的新增属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%B9%E6%80%A7%E7%9B%92"><span class="toc-number">55.</span> <span class="toc-text">弹性盒</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%99%E7%88%B6%E5%85%83%E7%B4%A0%E6%B7%BB%E5%8A%A0"><span class="toc-number">55.1.</span> <span class="toc-text">给父元素添加</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%99%E5%AD%90%E5%85%83%E7%B4%A0%E6%B7%BB%E5%8A%A0"><span class="toc-number">55.2.</span> <span class="toc-text">给子元素添加</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E5%88%97"><span class="toc-number">56.</span> <span class="toc-text">多列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">57.</span> <span class="toc-text">媒体查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80"><span class="toc-number">58.</span> <span class="toc-text">移动端布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#vw-rem-%E5%B8%83%E5%B1%80"><span class="toc-number">58.1.</span> <span class="toc-text">vw-rem 布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%95%B4%E5%90%88%E4%BC%98%E5%8A%BF"><span class="toc-number">58.2.</span> <span class="toc-text">图片整合优势</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%95%B4%E5%90%88%E7%9A%84%E5%8E%9F%E5%88%99"><span class="toc-number">58.3.</span> <span class="toc-text">图片整合的原则</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#debug"><span class="toc-number">59.</span> <span class="toc-text">debug</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSSHack-%E6%8C%87%E4%B8%80%E7%A7%8D%E5%85%BC%E5%AE%B9-CSS-%E5%9C%A8%E4%B8%8D%E5%90%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA%E7%9A%84%E6%8A%80%E5%B7%A7%E6%96%B9%E6%B3%95"><span class="toc-number">60.</span> <span class="toc-text">CSSHack 指一种兼容 CSS 在不同浏览器中正确显示的技巧方法:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BF%9B%E8%A1%8C-IE-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%85%BC%E5%AE%B9"><span class="toc-number">61.</span> <span class="toc-text">特殊符号进行 IE 浏览器的兼容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96"><span class="toc-number">62.</span> <span class="toc-text">优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">63.</span> <span class="toc-text">快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">64.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-%E7%9A%84%E7%BB%A7%E6%89%BF%E6%80%A7"><span class="toc-number">65.</span> <span class="toc-text">CSS 的继承性</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://Mayyuji.github.io/2021/04/27/notes1/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mayyuji"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="兔儿的小窝"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">HTML+CSS笔记</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2021-04-27 11:08:29" itemprop="dateCreated datePublished" datetime="2021-04-27T11:08:29+08:00">2021-04-27</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2025-06-09 09:30:25" itemprop="dateModified" datetime="2025-06-09T09:30:25+08:00">2025-06-09</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wenjianjiaicon"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/Notes/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">Notes</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/HTMl/" style="background:white;border-radius: 5px;margin: 0 3px;--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon-edit"></use></svg></span><span class="tag-name">HTMl</span></a><a class="tag-item" href="/tags/CSS/" style="background:white;border-radius: 5px;margin: 0 3px;--text-color:#5298d1"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon-edit"></use></svg></span><span class="tag-name">CSS</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#8DADFC;"><h3 id="文件夹命名规则"><a href="#文件夹命名规则" class="headerlink" title="文件夹命名规则"></a>文件夹命名规则</h3><p>建议使用英文、数字、_ -, 不要有特殊字符(#$%@.?),不要有中文和空格</p>
+<h3 id="HTML-文档结构"><a href="#HTML-文档结构" class="headerlink" title="HTML 文档结构"></a>HTML 文档结构</h3><p>&lt;!DOCTYPEhtml&gt;文档声明，声明这是一个 html5,作用是告知浏览器这是一</p>
+<p>个 html5 文档结构</p>
+<p>&lt;html&gt;&lt;/html&gt;根元素，一- 个文档有且只有一个根元素</p>
+<p>&lt;head&gt;&lt;/head&gt;页面的头部,放置页面的一些基本信息</p>
+<p>&lt;meta charset=”utf-8” /&gt;编码方式</p>
+<p>&lt;title&gt;&lt;/title&gt;状态栏标题</p>
+<p>&lt;body&gt;&lt;/body&gt;页面主体内容,放 htm1|标签</p>
+<h3 id="标签的语法"><a href="#标签的语法" class="headerlink" title="标签的语法"></a>标签的语法</h3><p>封闭类型标签（双标签）&lt;body&gt;&lt;/body&gt;</p>
+<p>由开始标签和结束标签构成</p>
+<p>非封闭类型标签(单标签，空标签)&lt;img /&gt;</p>
+<h3 id="标签的属性"><a href="#标签的属性" class="headerlink" title="标签的属性"></a>标签的属性</h3><p>&lt;div 属性 1=”属性值” 属性 2=”属性值”&gt;&lt;/div&gt;多个属性不分先后，空格隔开</p>
+<p>&lt;img 属性 1=” 属性值” 属性 2=” 属性值”/&gt;</p>
+<h3 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h3><blockquote>
+<p>1.标题<br>&lt;h1&gt;&lt;/h1&gt;一级标题 一般包裹 logo<br>&lt;h2&gt;&lt;/h2&gt;二级标题<br>&lt;h3&gt;&lt;/h3&gt;三级标题<br>&lt;h4&gt;&lt;/h4&gt;四级标题<br>&lt;h5&gt;&lt;/h5&gt;五级标题<br>&lt;h6&gt;&lt;/h6&gt;六级标题</p>
+</blockquote>
+<p>2.段落元素</p>
+<p>&lt;p&gt;&lt;/p&gt;一般包裹描述性文本</p>
+<p>3.&lt;div&gt;&lt;/div&gt;容器</p>
+<p>4.列表</p>
+<p>无序列表 ul&gt;li type circle 空心圆 disc 默认(圆点) square 矩形</p>
+<p>有序列表 ol&gt;li type 属性改表示符号 1 A a Ⅰ i start=“”从哪开始</p>
+<p>自定义列表 dl&gt;dt.dd 缩进—图文混排</p>
+<p>5.水平分割线<br>&lt;hr&gt;<br>-————以上 1-5 标签都是独占一行,叫做块级元素—————</p>
+<p>6.加粗 &lt;b&gt;&lt;/b&gt;</p>
+<p>&lt;strong&gt;&lt;/strong&gt;</p>
+<p>7.倾斜 &lt;i&gt;&lt;/i&gt;</p>
+<p>&lt;em&gt;&lt;/em&gt;</p>
+<p>8.下划线&lt;u&gt;&lt;/u&gt;</p>
+<p>9.删除线&lt;del&gt;建议用&lt;/del&gt; &lt;s&gt;&lt;/s&gt;</p>
+<p>10.span 标签：用于一大段文本中某一部分文本设置</p>
+<p>1 ）包裹内容不换行</p>
+<p>2 ）自身不带任何样式</p>
+<p>11.图片</p>
+<p>&lt;img src=“” alt=”” title=”” /&gt;</p>
+<p>src 绝对路径：本机、网络</p>
+<blockquote>
+<p>相对路径：相对位置 同级 01.png 返回上一步../01.png<br>返回上一级进入其他../img/01.png</p>
+</blockquote>
+<p>alt 属性:图片无法正常显示时显示的提示文本</p>
+<p>title 属性:鼠标移入显示的文本</p>
+<p>12.超链接-页面间跳转</p>
+<p>&lt;a href=” “ target=””&gt;test&lt;/a&gt;</p>
+<p>href 属性:引入页面的路径</p>
+<blockquote>
+<p>target 属性:页面打开的方式<br>target=”_ self” 当前页面打开，默认值<br>target=” _blank” 新的标签也打开<br>既是标题又是超链接,建议用块级元素包行内元素<br>&lt;a href=”id”/&gt; 跳转到相应的 id 位置<br>text-decoration:none 去除超链接默认下划线</p>
+</blockquote>
+<p>13.下标 &lt;sub&gt;&lt;/sub&gt;</p>
+<p>14.上标&lt;sup&gt;&lt;/sup&gt;</p>
+<p>15.文本换行 &lt;br /&gt;</p>
+<p>-—————-以上 6~15 为行内元素—————————-</p>
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>空格&amp;nbsp；</p>
+<p>&lt; &gt; &amp;lt； &amp;gt；</p>
+<p>&amp;copy；版权 ©</p>
+<p>注册 &amp;reg；®</p>
+<p><code>### Day2.3 7/22</code></p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>Table-tr-td</p>
+<ol>
+<li> table 属性：</li>
+</ol>
+<p>单元格外边距 cellspacing</p>
+<blockquote>
+<p>单元格内边距 cellspadding<br>边框 border<br>宽度 width<br>高度 height<br>表格水平位置 algin=“left / right / center ”</p>
+</blockquote>
+<ol>
+<li><p>td 的属性</p>
+<p> 向右合并单元格，跨列合并单元格 colspan</p>
+<p> 向下合并单元格，跨行合并单元格 rowspan</p>
+<p> 宽度 width—更改本列单元格的宽</p>
+<p> 高度 height—更改本行单元格的高度</p>
+<p> 内容水平位置 align</p>
+</li>
+</ol>
+<h3 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h3><p>&lt;form action= “” method=”” name=””&gt;&lt;/form&gt;</p>
+<p>1. form 的属性</p>
+<blockquote>
+<p>action 提交的地址<br>method 提交方式: get 默认，明文提交/ post 密文提交<br>name 起个名字（后端</p>
+</blockquote>
+<ol>
+<li><p>文本框</p>
+<p> &lt;input type=”text” name=”username” value=”请输入用户名“ /&gt;</p>
+<p> type=”text”文本框</p>
+<p> name=”username”‘起个名字</p>
+<p> value=”请输入您的昵称”控件上的文字</p>
+<p> &lt;input type=”password” name=”pwd” /&gt;</p>
+</li>
+<li><p>提交按钮</p>
+<p> &lt;input type=”submit” value=””/&gt;</p>
+</li>
+<li><p>重置按钮</p>
+<p> type=“reset“ 清除输入内容</p>
+<p> value=““</p>
+</li>
+</ol>
+<p>6.普通按钮</p>
+<p>type=”button” value=””</p>
+<h3 id="CSS-介绍"><a href="#CSS-介绍" class="headerlink" title="CSS 介绍"></a>CSS 介绍</h3><p>1.css 层叠样式表，级联样式表，简称样式表</p>
+<p>2.基本样式</p>
+<blockquote>
+<p>字体颜色 color<br>背景颜色 background-color<br>宽度 width<br>高度 height<br>能设置宽高的元素：<br> 块级元素(div,p,h1-h6,hr,ol,u1, li,dl,dt,dd, table,tr,td,form)<br>行内元素(img, input)|</p>
+</blockquote>
+<p>3.引入样式表的方法</p>
+<p>-内部样式表</p>
+<p>&lt;style type=”text/css”&gt;</p>
+<p>div{</p>
+<p>width: 100px;</p>
+<p>height: 100px;</p>
+<p>background-color: aqua;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>-外部样式表</p>
+<p>第一种方法（常用）：在 css 文件夹中创建 css 文件在 html 文件中 link 引入（可引入多个）</p>
+<p>@charset “utf-8”;防止 css 文件中中文乱码</p>
+<p>&lt;link rel=”stylesheet” type=”text/css” href=”css/style.css”/&gt;</p>
+<p>rel=”stylesheet”作用：关联样式表</p>
+<p>第二种方法（没人要）：&lt;style type=”text/css”&gt;</p>
+<p>@import url(“css/style.css”);</p>
+<p>&lt;/style&gt;</p>
+<p>差别 1：本质的差别：link 属于 XHTML 标签，而@import 完全是 CSS 提供的一种方式。</p>
+<p>差别 2：加载顺序的差别：当一个页面被加载的时候（就是被浏览者浏览的时候），link 引用的 CSS 会同时被加载，而@import 引用的 CSS 会等到页面全部被下载完再被加载。所以有时候浏览@import 加载 CSS 的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。</p>
+<p>差别 3：兼容性的差别：@import 是 CSS2.1 提出的，所以老的浏览器不支持，@import 只有在 IE5 以上的才能识别，而 link 标签无此问题。</p>
+<p>差别 4：使用 dom(document object model 文档对象模型<br>)控制样式时的差别：当使用 javascript 控制 dom 去改变样式的时候，只能使用 link 标签，因为@import 不是 dom 可以控制的.</p>
+<p>-内联样式、行内样式</p>
+<p>&lt;div style=”width: 200px; height: 200px;color: red;”&gt;第一个 div&lt;/div&gt;</p>
+<p>4.样式表的特征：</p>
+<p>-层叠性：不重复的属性会层叠到一起，重复的属性以后者为准</p>
+<p>-就近原则</p>
+<p>-手动调整样式最高优先级</p>
+<p>background-color: pink ! important;</p>
+<p><code>### Day3.4 7/23</code></p>
+<h3 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h3><blockquote>
+<p>-元素选择器 div { }<br>适用于更改页面中的某一类元素的样式 （例如超链接样式）<br>-id 选择器<br>id 有唯一性：一个元素只能有一个 id 名，并且同 id 名只能被使用一次<br>一般情况下会给板块的大容器设置<br>-class 类选择器<br>.class 类名：<br>一个元素可以有多个类名，并且类名可以被重复使用（不同/相同的元素使用）多个类名用空格间隔<br>类名命名规则：<br>见名知意，可以包含字母、数字、_ 、- 、，写字母开头，不能包含特殊字符<br>-通配符选择器 *匹配页面中所有的元素<br>*{<br>margin：0;外边距<br>padding：0；内边距<br>}<br>-群组选择器<br>给多个元素添加相同的样式<br>.main, .content, . box { }<br>-子代选择器 IE-6 不识别<br>&gt; 前后父子关系，一个页面中不要频繁使用<br>.lists&gt;li { width：100px；height：200px }<br>-后代选择器<br>空格隔开<br>.warp a { }<br>- 伪类选择器<br> :link 访问前的状态<br> :visited 访问后的状态<br> :hover 鼠标移入<br> :active 激活状态(鼠标按下未松开)</p>
+</blockquote>
+<h3 id="权值"><a href="#权值" class="headerlink" title="权值"></a>权值</h3><p>元素选择器 1</p>
+<p>class 类 10</p>
+<p>id 100</p>
+<p>内联样式 1000</p>
+<p>. wrap&gt;box a{ } 权值=111</p>
+<p>. wrap , .box, a { } 权值不能相加，逗号前后没有关联</p>
+<h3 id="Fscapture-与-PS-的使用"><a href="#Fscapture-与-PS-的使用" class="headerlink" title="Fscapture 与 PS 的使用"></a>Fscapture 与 PS 的使用</h3><p>Fscapture 颜色拾取器: crtl+2</p>
+<p>background-color: rgb (29,58,126) ;</p>
+<p>background-color:1D3A7E;</p>
+<p>PS:</p>
+<ol>
+<li><p> 编辑-首选项-单位与标尺-单位改成像素</p>
+</li>
+<li><p> 放大 alt+鼠标滚轮</p>
+</li>
+<li><p> 移动 空格键+鼠标左键</p>
+</li>
+</ol>
+<p>ps 切图步骤:</p>
+<blockquote>
+<p>1.选择器切片工具<br>2.进行切片<br>标尺:视图-标尺勾选 PS<br>重新调整切片：按 ctrl 单单击<br>3.文件-导出-存储为 web 所有格式-左下角缩小到 6%-框选全图-右上角选</p>
+</blockquote>
+<p>择保存格式-存储-改文件名为英文-所有用户切片-保存</p>
+<h3 id="CSS-常用属性"><a href="#CSS-常用属性" class="headerlink" title="CSS 常用属性"></a>CSS 常用属性</h3><h4 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h4><ol>
+<li><p>字体大小</p>
+<p> font-size：12px</p>
+<p> 浏览器默认字体大小 16px，允许设置的最小字体 12px</p>
+</li>
+<li><p>字体</p>
+<p> font- family: “微软雅黑”,arial, “times new roman”;</p>
+<p> font-family 指定字体:中文要加引号,一个单词不用加””，多个单词需要加</p>
+<p> 先设置第-一个字体，如果用户电脑中没有该字体会向后查找，如果都没有最终采取默认字体</p>
+</li>
+<li><p>字体颜色</p>
+<p> color：rgb（123，123，123）；每一位的范围是 0~255</p>
+<p> color：2B579A；六位十六位禁止表示法，每一位范围 0~9A~F</p>
+<p> 纯白 rgb(255,255, 255)、ffffff、 fff</p>
+<p> 纯黑 rgb(0,0,0)、000000、 000</p>
+</li>
+<li><p>文本粗细</p>
+<p> 加粗 font-weight：bold；</p>
+<p> 正常 font-weight：normal；</p>
+<p> 细体 font-weight：lighter；（没人要</p>
+</li>
+<li><p>首行缩进</p>
+<p> text-indent：2em；可以取负值</p>
+<p> text-indent：-9999px 解决背景图做导航浏览器检索不到内容</p>
+</li>
+<li><p>文本线条修饰</p>
+<p> 下划线 text-decoration:color underline ;</p>
+<p> 删除线 text-decoration: line-through；</p>
+<p> 无线条 text-decoration: none;</p>
+</li>
+<li><p>行高</p>
+<p> line-height：20px</p>
+<p> ***单行文本的垂直居中 行高等于父元素的高</p>
+</li>
+<li><p>文本和图片的水平对齐方式</p>
+<p> text-align：left / right / center 、</p>
+<p> 图片居中要给图片的容器设置</p>
+</li>
+</ol>
+<h3 id="文本属性补充-PS："><a href="#文本属性补充-PS：" class="headerlink" title="文本属性补充 PS："></a>文本属性补充 PS：</h3><blockquote>
+<p>1.字体大小 font-size<br>默认值 medium=16px<br>单位 px，pt，em 父元素字体大小的倍数 ，rem<br>2.文本倾斜 font-style： italic 斜体/ oblique 字体倾斜<br>3.字间距 letter-spacing:value;控制英文字母或汉字的字距。<br>4.词间距 word-spacing:value; 控制英文单词词距。<br>5. text-transform:none 无转换 Fcapitalize 首字母大写/uppercase 全都大<br>写/lowercase 全都小写;</p>
+</blockquote>
+<ol>
+<li><p>font 简写属性 至少要有字号和字体</p>
+<p> font : bold italic 12px/1. 5em “宋体”; （粗细 倾斜）（字体大小） / 行高 字体</p>
+</li>
+<li><p>文本垂直对齐方式 vertical-align</p>
+<p> top 上</p>
+<p> bottom</p>
+<p> middle 居中</p>
+<p> baseline 基线对齐，默认值</p>
+<p> *解决图片下方 4px 间距问题</p>
+<p> img {vertical-align:非 baseline } 或者 display:block<br> 要考虑 text-algin：center 问题</p>
+<p> table;可以使用该属性设置垂直方向的位置</p>
+<p> input, img 可以使用该属性设置旁边的文本的垂直位置</p>
+</li>
+</ol>
+<h4 id="列表属性"><a href="#列表属性" class="headerlink" title="列表属性"></a>列表属性</h4><p>*去掉列表标识符</p>
+<p>ul,ol,li {</p>
+<p>list-style:”none”;</p>
+<p>list-style-type:”none”;</p>
+<p>}</p>
+<ol>
+<li><p> list-style-type: 改变列表标识符 thai circle 空心圆 disc 默认(圆点) square 矩形</p>
+</li>
+<li><p> list-style-image：url（）；改变标识符为图片</p>
+</li>
+<li><p> list-style-position：inside 标识符位置</p>
+</li>
+</ol>
+<h4 id="边框属性"><a href="#边框属性" class="headerlink" title="边框属性"></a>边框属性</h4><p>border：粗细 线型 颜色</p>
+<p>线型：</p>
+<p>直线 solid、虚线 dashed、点状线 dotted、双线 double、</p>
+<p>同时给四个方向设置边框</p>
+<p>单方向设置边框：</p>
+<p>上边框 border-top:1px solid 000; transparent 透明色</p>
+<p>下边框 border-bottom:1px solid 000 ;</p>
+<p>左边框 border-left:1px solid 000;</p>
+<p>右边框 border- right : 1px solid 000;</p>
+<p><code>### Day5 7/24</code></p>
+<h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><p>-背景图一般是装饰作用</p>
+<p>-背景颜色 background-color： ；</p>
+<p>-引入背景图 backgroud-image：url（）；</p>
+<p>-背景重复 background-repeat：no-repeat；</p>
+<p>-背景定位 background-position：100px 100px ；center / top / bottom / left / right</p>
+<p>-简写 background：背景色 背景路径 重复 定位 ；</p>
+<p>-背景固定 background-attachment: fixed; 背景不跟随滚动条</p>
+<p>-CSS sprite / 精灵图 / 雪碧图</p>
+<p>把小图标拼合放在一张图</p>
+<h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3><p>浮动的元素会脱离文档流</p>
+<p>-浮动的属性</p>
+<p>float：left / right / none ；</p>
+<p>-浮动的停止条件</p>
+<p>1.碰到父元素的边缘</p>
+<p>2.碰到浮动的元素</p>
+<p><code># Week2## Day6 7/27</code></p>
+<h3 id="框模型、盒子模型"><a href="#框模型、盒子模型" class="headerlink" title="框模型、盒子模型"></a>框模型、盒子模型</h3><p>标准和模型：内容、内边距、外框、外边距</p>
+<p>元素的占地宽度：左外边距+左边框+左内边距+内容宽+右内边距+右边框+右外边距</p>
+<h4 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h4><p>margin：10px; 上右下左 10px</p>
+<p>margin：10px 20px； 上下 左右</p>
+<p>margin：10px 20px 30px ；上 左右 下</p>
+<p>margin：10px 20px 30px 40px； 上右下左</p>
+<p>*块级元素的水平居中</p>
+<p>水平方向的值设置为 auto，在浮动时不生效</p>
+<p>使用 margin 遇到的问题：</p>
+<ol>
+<li><p> 垂直方向外边距合并，在没有浮动的情况下会遇到，以大值为准</p>
+</li>
+<li><p> 不能设置的行内元素（span、a）无法置垂直方向外边距，水平可以</p>
+</li>
+<li><p> 内外嵌套的 div，如果都不存在浮动父元素没有边框，给子元素设置上外边距会默认作用于父元素（外边距传递问题）</p>
+</li>
+</ol>
+<h3 id="内边距-padding"><a href="#内边距-padding" class="headerlink" title="内边距 padding"></a>内边距 padding</h3><p>设置值—同 margin</p>
+<p>使用 paddin 遇到的问题</p>
+<ol>
+<li><p> 不能设置尺寸的行内元素（span、a）垂直方向只会撑大元素，不会改变元素位置</p>
+</li>
+<li><p> 元素添加内边距后尺寸会变大 width 减 padding*2</p>
+</li>
+</ol>
+<h3 id="文本溢出属性"><a href="#文本溢出属性" class="headerlink" title="文本溢出属性"></a>文本溢出属性</h3><p>overflow：</p>
+<p>visible 溢出可见</p>
+<p>hidden 溢出隐藏</p>
+<p>scroll 滚动条 建议用 auto</p>
+<p>oveflow- x 控制水平方向溢出</p>
+<p>oveflow-y 控制水平方向溢出</p>
+<p>单行文本显示省略号效果</p>
+<p>. box{</p>
+<p>width: 600px; 宽度</p>
+<p>white-space: nowrap; 控制文本不换行</p>
+<p>overflow: hidden; 溢出隐藏</p>
+<p>text-overflow: ellipsis; 显示省略号</p>
+<p>}</p>
+<p><code>### Day7 7/28</code></p>
+<h3 id="元素嵌套"><a href="#元素嵌套" class="headerlink" title="元素嵌套"></a>元素嵌套</h3><p>块级元素可以嵌套块级元素和行内元素，p 标签不能包块级元素</p>
+<h3 id="元素类型转换"><a href="#元素类型转换" class="headerlink" title="元素类型转换"></a>元素类型转换</h3><p>display：</p>
+<p>block 块</p>
+<p>inline 行内</p>
+<p>inline-block 行内块</p>
+<p>能设置宽高，不自动换行（类似于 img input）</p>
+<p>none 无</p>
+<p>元素不再占据文档空间</p>
+<p>list-item 此元素会作为列表显示</p>
+<h3 id="置换元素"><a href="#置换元素" class="headerlink" title="置换元素"></a>置换元素</h3><p>浏览器根据元素的标签和属性，来决定元素的具体显示内容</p>
+<p>&lt; input type=”button” /&gt;</p>
+<p>&lt;img src=”” /&gt;</p>
+<p>父元素设置 overflow：auto / hidden 会被浮动的子元素撑开高</p>
+<p><code>### Day8 7 / 29</code></p>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><p>position:</p>
+<p>static 默认值</p>
+<p>relative 相对定位</p>
+<p>absolute 绝对定位</p>
+<p>fixed 固定定位</p>
+<p>sticky 粘性定位</p>
+<ol>
+<li><p>相对定位 position：relative</p>
+<p> 参照物：元素本身</p>
+<p> 是否脱离文档流： 不脱离</p>
+<p> 偏移距离（向着中心点移动为正值）</p>
+<p> top;100px right left bottom</p>
+</li>
+<li><p>绝对定位 position ：absolute</p>
+<p> 是否脱离文档流： 脱离</p>
+<p> 参照物：外层具有 position 属性的元素，如果没有找到最终参照浏览器空白文档区域定位</p>
+<p> top;100px right left bottom 所有值都为距离参考物的距离</p>
+</li>
+</ol>
+<p>z-index 改变元素的层叠位置，可取负值，越打越靠前没有单位（兄弟之间）</p>
+<ol>
+<li><p>固定定位 position：fixed；</p>
+<p> 参考物：浏览器空白文档区域</p>
+<p> 是否脱离文档流： 脱离</p>
+</li>
+<li><p>粘性定位 position : sticky;</p>
+<p> 参考物:浏览器空白文档区域</p>
+<p> 是否脱离文档流:不脱离</p>
+<p> Top</p>
+</li>
+</ol>
+<h3 id="定位实现元素居中"><a href="#定位实现元素居中" class="headerlink" title="定位实现元素居中"></a>定位实现元素居中</h3><blockquote>
+<p>1.父元素尺寸未知,子元素尺寸已知<br> 该方法同样适用于子元素比父元素尺寸大的情况<br> 父元素{<br> width: 600px;<br> height: 600px;<br> border: 1px solid 000;<br> position: relative;<br> }<br> 子元素{<br> width: 100px;<br> height: 100px;<br> background: yellow;<br> position: absolute;<br> top: 50%;<br> left: 50%;<br> margin-top: -50px;<br> margin-left: -50px;<br> }</p>
+</blockquote>
+<blockquote>
+<p>2.父元素子元素尺寸未知 只适用于子元素比父元素尺寸小的情况<br> 父元素{<br> position: relative;<br> }<br> 子元素{<br>position: absolute;<br>margin:auto;<br> top: 0;<br> bottom: 0;<br> left: 0;<br> right: 0<br> }</p>
+</blockquote>
+<blockquote>
+<p>3.通过 2D 移动属性 可用于子比父大的情况<br>父元素{<br> position: relative;<br> }<br> 子元素{<br>position: absolute;<br>top：50%；<br>left ：50%；<br>transform：translate（-50%，-50%）；<br>}</p>
+</blockquote>
+<h3 id="透明度-用作遮罩层"><a href="#透明度-用作遮罩层" class="headerlink" title="透明度 用作遮罩层"></a>透明度 用作遮罩层</h3><blockquote>
+<p>background :rgba(255,0,0,0-1 之间的小数)<br>数值越小越透明，IE 678 不支持该属性<br>opacity:0-1;<br>数值越小越透明，有继承性 。IE 678 不支持该属性<br>filter：alpha(opacity=40);<br>IE 678 支持该属性</p>
+</blockquote>
+<h3 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h3><p>当前页面的锚点跳转</p>
+<p>&lt;a href= ”anchorname”&gt;点击的位置&lt;/a&gt;</p>
+<p>&lt;div id=”anchorname”&gt;&lt;/div&gt;</p>
+<p>其他页面的锚点跳转</p>
+<p>&lt;a href=” index . htmlanchorname”&gt;点击的位置&lt;/a&gt;</p>
+<p>&lt;div id=”anchorname”&gt;&lt;/div&gt;</p>
+<p><code>### Day9 7/30</code></p>
+<h3 id="宽度自适应"><a href="#宽度自适应" class="headerlink" title="宽度自适应"></a>宽度自适应</h3><ol>
+<li><p> 宽度 width 默认值 auto 或者不写 并不是 100%</p>
+</li>
+<li><p> 高度自适应默认值 auto 或者不写</p>
+</li>
+<li><p>全屏页面 无滚动条页面（主要是移动端）</p>
+<p> *{</p>
+<p> Padding：0；</p>
+<p> Margin： 0；</p>
+<p> }</p>
+<p> Html，body{</p>
+<p> Height: 100%;</p>
+<p> }</p>
+<p> body 里面的板块才能平分浏览器空白文档区域的高度</p>
+</li>
+<li><p>最大最小宽高</p>
+<p> 最大宽度 max-width</p>
+<p> 最小宽度 min-width 解决背景 bug</p>
+<p> 最大高度 max-height</p>
+<p> 最小高度 min- height</p>
+</li>
+<li><p> -子元素浮动，父元素没有设置高度</p>
+</li>
+<li><p> 给父元素固定高度</p>
+</li>
+<li><p>overflow：hidden</p>
+<p> -触发了 BFC，子元素参与宽高计算</p>
+</li>
+<li><p> clear：borh；</p>
+</li>
+<li><p>.clr:after{</p>
+<p> content:” “;</p>
+<p> display:block;</p>
+<p> clear:both;</p>
+<p> height:0;</p>
+<p> overflow: hidden ;</p>
+<p> visibility: hidden;</p>
+<p> }</p>
+<p> clr{</p>
+<p> zoom:1 ; 兼容 IE</p>
+<p> }</p>
+</li>
+</ol>
+<h3 id="元素隐藏"><a href="#元素隐藏" class="headerlink" title="元素隐藏"></a>元素隐藏</h3><p>display:none; 元素隐藏位置不在</p>
+<p>visibility:hidden 元素隐藏，位置还在</p>
+<h3 id="伪对象选择器"><a href="#伪对象选择器" class="headerlink" title="伪对象选择器"></a>伪对象选择器</h3><p>：：first-letter 匹配元素的第一个字符</p>
+<p>：：first-line 匹配元素的第一行</p>
+<p>：before{之前</p>
+<p>content：“文字” ；</p>
+<p>}</p>
+<p>：after{ 之后</p>
+<p>content：“ ” ；追加元素</p>
+<p>display:block;</p>
+<p>width:100px ;</p>
+<p>height:100px;</p>
+<p>}</p>
+<p><code>### Day10 7/30</code></p>
+<h3 id="定位设置元素宽高"><a href="#定位设置元素宽高" class="headerlink" title="定位设置元素宽高"></a>定位设置元素宽高</h3><p>两边固定中间自适应-float.html</p>
+<h3 id="表单元素的补充"><a href="#表单元素的补充" class="headerlink" title="表单元素的补充"></a>表单元素的补充</h3><ol>
+<li><p>单选按钮 点击文字选中 lable</p>
+<p> &lt; input type=”radio” name=”相同“ value=”不同“ checked(默认选中) / &gt;</p>
+</li>
+<li><p>复选框</p>
+<p> &lt; input type=”checkbox” name=”相同“ value=”不同“ checked(默认选中) / &gt;</p>
+</li>
+<li><p>下拉菜单</p>
+<p> &lt;select name= “city” size=”5”&gt;</p>
+<p> &lt;option value=”qd”&gt;青 岛&lt;/option&gt;</p>
+<p> &lt;option value=”bj”&gt;北 京&lt;/ option&gt;</p>
+<p> &lt;option value=”nj”&gt;南 京&lt;/ option&gt;</p>
+<p> &lt;option value=”jn”&gt;济 南&lt;/ option&gt;</p>
+<p> &lt;/ select&gt;</p>
+<p> Size 显示的行数</p>
+<p> selected 可以设置某一项默认选中（selected=“selected“ 等同于 selected）</p>
+</li>
+<li><p>多行文本域</p>
+<p> &lt; textarea name=” ” cols=”每行字符数” rows=“行数“ &gt;&lt;/textarea &gt;</p>
+<p> resize : none; css3 禁止用户改变元素尺寸 并不是行内属性</p>
+</li>
+<li><p>文件上传</p>
+<p> &lt; input type=”file” /&gt;</p>
+</li>
+<li><p>表单字段集</p>
+<p> &lt;fieldset&gt;</p>
+<p> &lt;legend&gt;标题&lt;/legend&gt;</p>
+<p> &lt;!–&lt;div&gt;表单字段集里面的文本表单 div&gt;–&gt;</p>
+<p> &lt;/fieldset&gt;</p>
+</li>
+<li><p>Lable 标签</p>
+<p> 第一种方法 &lt;lable&gt; 删掉 lable for 属性</p>
+<p> 我同意此条款&lt;input type=”checkbox” name=”” value=”” /&gt;</p>
+<p> &lt;/ lable&gt;</p>
+<p> 第二种方法</p>
+<p> &lt;lable for=“aggre“&gt;我同意此条款&lt;/ lable&gt;</p>
+<p> &lt;input type=”checkbox” name=”” value=”” id=“aggre“ /&gt;</p>
+</li>
+</ol>
+<h3 id="表格属性"><a href="#表格属性" class="headerlink" title="表格属性"></a>表格属性</h3><h4 id="表格行分组"><a href="#表格行分组" class="headerlink" title="表格行分组"></a>表格行分组</h4><p>thead 表头、tbody、tfoot 表尾</p>
+<p>thead-tr-th（加粗并居中）</p>
+<ol>
+<li><p>边框</p>
+<p> td，th { border：1px solid 000 }</p>
+</li>
+<li><p>单元格间距 ——给 table 添加、</p>
+<p> border-spacing: 0;</p>
+</li>
+<li><p>合并表格边框——给 table 添加</p>
+<p> borde-collapse:collapse;</p>
+</li>
+<li><p>表格标题位置</p>
+<p> caption-side: top / bottom;</p>
+</li>
+<li><p>固定表格布局 宽高</p>
+<p> table-layout : fixed / auto 默认值</p>
+</li>
+<li><p>无内容单元格显示、隐藏</p>
+<p> empty-cells：hide；</p>
+<p> BFC</p>
+<p> 子元素的高度参与计算</p>
+</li>
+</ol>
+<p><code># Week3## Day11 8/3</code></p>
+<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><ol>
+<li><p>线性渐变</p>
+<p> background:linear-gradient（角度，颜色，颜色，…）</p>
+<p> 角度：</p>
+<p> 可以写方向，例如由左到右写成 to right</p>
+<p> 写数值 15deg</p>
+</li>
+<li><p>径向渐变：</p>
+<p> background: radial-gradient(fff,000); 或指定颜色</p>
+</li>
+<li><p>重复线性渐变</p>
+<p> background:repeating-linear-gradient（方向，颜色 0%，颜色 20%，…）</p>
+</li>
+<li><p>重复径向渐变</p>
+<p> background:repeating-radial-gradient（颜色 0%，颜色 20%，…）</p>
+</li>
+</ol>
+<h3 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h3><p>1.transiton： 过渡的属性 所需的时间 速度效果 延迟效果</p>
+<p>速度效果：</p>
+<p>匀速过渡 linear(匀速)</p>
+<p>先慢后快 ease-in</p>
+<p>先快后慢 ease-out</p>
+<p>由慢变快后变慢 ease- in-out</p>
+<p>默认值,慢速开始慢速结束 ease 王</p>
+<p>2. transition 如果给 hover:鼠标移入有过渡，移出没有过渡</p>
+<p>transition 如果给元素本身:鼠标移入移出都有过渡</p>
+<ol>
+<li><p>多个属性设置不同效果</p>
+<p> 用逗号进行隔离</p>
+<p> Transition：width 2 linear 1s，background 1s ；</p>
+</li>
+<li><p>多个属性设置相同的过渡效果</p>
+<p> 属性用 all 来表示</p>
+<p> Transition ：all 2s linear 1s ；</p>
+</li>
+</ol>
+<h3 id="浏览器前缀"><a href="#浏览器前缀" class="headerlink" title="浏览器前缀"></a>浏览器前缀</h3><p>谷歌，Safari ：-webkit-</p>
+<p>欧朋 Opera ：-o-</p>
+<p>火狐 Firefox ：-moz-</p>
+<p>IE ：-ms-</p>
+<h3 id="2D"><a href="#2D" class="headerlink" title="2D"></a>2D</h3><ol>
+<li><p>位移</p>
+<p> transform：translate(100px)</p>
+<p> x 轴正方向移动</p>
+<p> transform：translate(100px，100px)</p>
+<p> 第一个值 x 轴方向移动，第二个值 y 轴方向移动</p>
+<p> transform：translateX(100px)</p>
+<p> x 轴方向移动</p>
+<p> transform：translateY(100px)</p>
+<p> y 轴方向移动</p>
+</li>
+<li><p>旋转</p>
+<p> transform : rotate(45deg);顺时针旋转 45deg</p>
+<p> transform : rotate(-45deg);逆时针旋转 45deg</p>
+<p> -转换中心</p>
+<p> transform-origin：50% 50%；</p>
+<p> 旋转，缩放会影响坐标轴一起旋转缩放</p>
+</li>
+<li><p>缩放</p>
+<p> transform：scale（2）；元素变为原来的二倍</p>
+<p> transform：scale（2，0.5）；元素变为原来的宽二倍高 0.5</p>
+<p> transform：scaleX（2）；元素变为原来的二倍</p>
+<p> transform：scaleY（2）；元素变为原来的二倍</p>
+</li>
+<li><p>倾斜</p>
+<p> transform ：skew（45deg）；</p>
+</li>
+</ol>
+<h3 id="元素居中第三种方法"><a href="#元素居中第三种方法" class="headerlink" title="元素居中第三种方法"></a>元素居中第三种方法</h3><blockquote>
+<p>父{<br> position:relative;<br> }<br> 子{<br> position:absolute;<br> top:50%;<br> left:50%;<br> transform:translate(-50%,-50%);移动自己尺寸的一半<br> }</p>
+</blockquote>
+<h3 id="3d"><a href="#3d" class="headerlink" title="3d"></a>3d</h3><blockquote>
+<p>父元素添加 perspective:3000px; 景深<br>*父元素添加 transform-style:preserve-3d;<br>子元素保留 3d 转换位置<br>位移：<br>transform:translateZ()<br>transform:translate3d(100px,200px,200px);<br>transform:translateX(100px) translateY(200px) translateZ(200px);<br>旋转：<br>transform:rotateX(45deg);<br>transform:rotateY();<br>transform:rotateZ();<br>transform:rotate3d(x,y,z,45deg);</p>
+</blockquote>
+<h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><ol>
+<li><p>定义动画</p>
+<p> @keyframs 动画名称{</p>
+<p> from/ 0% { }</p>
+<p> 50% { }</p>
+<p> to / 100% { }</p>
+<p> }</p>
+</li>
+<li><p>执行动画 给元素本身打开浏览器本身，覆盖（鼠标移入）执行：写 hover 里</p>
+<p> animation: 动画名 动画执行时间 速度效果 延迟时间(0s) 执行次数 是否反向；</p>
+<p> 执行次数：infinite；无限循环</p>
+<p> 是或反向：反向 alternate</p>
+<p> animation-play-state 检索或设置对象动画的状态</p>
+<p> 暂停 paused</p>
+<p> animation-fill-mode: forwards;停在最后一帧</p>
+</li>
+</ol>
+<p><code>### Day12 8/5</code></p>
+<h3 id="Html5-语法"><a href="#Html5-语法" class="headerlink" title="Html5 语法"></a>Html5 语法</h3><blockquote>
+<p>内容类型<br>html5 的文件拓展符与内容类型保持不变，仍为 .html 或 .htm 。<br>doctype 声明<br>不区分大小写<br>指定字符编码集<br>&lt;meta charset=”UTF-8”&gt;<br>可省略标记的元素<br>不允许写结束标记的元素：br col embed hr img input link meta &gt; 可以省略结束标记的元素：li dd dt p option colgroup thead tbody tfoot tr td<br>th<br>可省略全部标记的元素：html head body colgroup tbody<br>省略引号<br>属性值可以用双引号，也可以是使用单引号</p>
+</blockquote>
+<h3 id="H5-新增的语义化标签"><a href="#H5-新增的语义化标签" class="headerlink" title="H5 新增的语义化标签"></a>H5 新增的语义化标签</h3><h4 id="块级"><a href="#块级" class="headerlink" title="块级"></a>块级</h4><p>section 元素 表示页面中的一个区块</p>
+<p>article 元素 文章内容（一大段文本）</p>
+<p>aside 元素 侧边栏，辅助信息</p>
+<p>header 元素 页面头部</p>
+<p>footer 元素 页面底部</p>
+<p>nav 元素 页面导航<br>&lt;nav&gt;</p>
+<p>&lt;li&gt; &lt;/li&gt;</p>
+<p>&lt;/ nav&gt;</p>
+<p>figure 元素表示一段独立的流内容，使用&lt;figcaption&gt;标题&lt;/figcaption&gt;&lt;article&gt;内容&lt;/article&gt;</p>
+<p>main 元素 表示页面中的主要内容</p>
+<p>hgroup 元素 标题的一个分组 &lt;hgroup&gt;&lt;h5&gt;&lt;/h5&gt;&lt;h6&gt;&lt;/h6&gt;&lt;/hgroup&gt;</p>
+<h4 id="行内"><a href="#行内" class="headerlink" title="行内"></a>行内</h4><p>mark 高亮文本 文本突出显示颜色</p>
+<p>time 时间</p>
+<h3 id="视频和音频"><a href="#视频和音频" class="headerlink" title="视频和音频"></a>视频和音频</h3><p>视频&lt;video src=””&gt;&lt;/video&gt;</p>
+<p>音频&lt;audio&gt;&lt;/audio&gt;</p>
+<p>controls 属性：向用户显示控件，比如播放按钮，根据浏览器显示不同样式</p>
+<p>autoplay 属性：自动播放。谷歌屏蔽此功能</p>
+<p>loop 属性：重复播放属性</p>
+<p>muted 属性：静音属性</p>
+<p>poster 属性：规定视频正在加载时显示的图像，指导用户点击播放按钮 音频无此属性</p>
+<p>&lt;source&gt;&lt;/source&gt;定义媒介资源，写在 video 内部，<br>规定可替换的视频/音频文件供浏览器根据它对媒体类型或者编解码器的支持进行选择。</p>
+<p>video 支持的格式：mp4 ogg webm{每个浏览器兼容性不同}</p>
+<p>audio 支持的格式：mp3 pgg</p>
+<h3 id="H5-新增表单元素-在-form-内"><a href="#H5-新增表单元素-在-form-内" class="headerlink" title="H5 新增表单元素 在 form 内"></a>H5 新增表单元素 在 form 内</h3><p>&lt;input type=” “</p>
+<p>required 此表单元素为必填 n</p>
+<p>Type=”email”限制用户必须输入邮箱类型</p>
+<p>Type=“url”限制用户必须输入地址类型</p>
+<p>Type-=”range”产生一个滑动条表单</p>
+<p>Type=“number”数字类型</p>
+<p>Type=”search”产生一个搜索意义的表单</p>
+<p>Type=“color”生成一个颜色选择的表单</p>
+<p>以下有兼容问题:</p>
+<p>Type=“time”限制用户必须输入时间类型</p>
+<p>Type=”month”限制用户必须输入月类型</p>
+<p>Type=“week”限制用户必须输入周类型</p>
+<p>Type=“datetime -local”选取本地时间</p>
+<p>Type=”date”日期类型</p>
+<p>&lt;output&gt;&lt;/output&gt; 用来接收两个控件计算的值</p>
+<h3 id="H5-新增的属性"><a href="#H5-新增的属性" class="headerlink" title="H5 新增的属性"></a>H5 新增的属性</h3><ol>
+<li><p>list 属性 输入框提示输入内容</p>
+<p> &lt;input type=”url” list=”url-lists”/&gt;</p>
+<p> &lt;datalist id=”url-lists”&gt;</p>
+<p> &lt;option value=”http: / /WWw. baidu. com” label=”百度”/&gt;</p>
+<p> &lt;option value=”http:/ /WWw. google.com” label=”谷歌” /&gt;</p>
+<p> &lt;option value= “http: / /WWW. jd. com’’ label=”京东” /&gt;</p>
+<p> &lt;/datalist&gt;</p>
+</li>
+<li><p> placeholder 提示文本，相较于 value 不用删除</p>
+</li>
+<li><p>autofocus</p>
+<p> 页面中的某一个控件自动获取焦点</p>
+</li>
+<li><p> required 必填字段</p>
+</li>
+<li><p>pattern 正则</p>
+<p> &lt;input type=”text” pattern=”[0-9][a-z]{3}” &gt;</p>
+</li>
+<li><p>input type=“number”</p>
+<p> min ， max ， step</p>
+<p> min 最小值</p>
+<p> max 最大值</p>
+<p> step 步长 step=“5“ 每次递增 5</p>
+</li>
+<li><p> multiple 多选，可选怎多个上传文件</p>
+</li>
+<li><p> novalidate 取消验证</p>
+</li>
+<li><p> autocomplete 自动完成 写 on 或 off</p>
+</li>
+</ol>
+<p><code>### Day13 8/6</code></p>
+<h3 id="回顾"><a href="#回顾" class="headerlink" title="回顾"></a>回顾</h3><p>1.H5 新增语义标签</p>
+<p>section 区块 section</p>
+<p>article 文本</p>
+<p>header 头部 header</p>
+<p>footer 底部 fotter</p>
+<p>nav 导航 nav</p>
+<p>aside 侧边栏 aside</p>
+<p>figure-figcaption 独立文本流</p>
+<p>main 主体 主体 main</p>
+<p>hgroup 标题分组</p>
+<p>mark 高亮文本</p>
+<p>time 时间</p>
+<p>2.H5 表单元素<br><code>email</code> <code>url</code> <code>range</code> <code>color</code> <code>number</code> <code>search</code> <code>time</code> <code>month</code> <code>week</code> <code>date</code> <code>datetime</code> <code>datetime-local</code><br>3.H5 表单属性</p>
+<p>required 必填</p>
+<p>placeholder 提示</p>
+<p>pattern 正则</p>
+<p>list 选择提示</p>
+<p>min</p>
+<p>max</p>
+<p>step</p>
+<p><code>autofocus </code>自动获得焦点</p>
+<p>autocomplete 自动完成</p>
+<p>novalidate 取消验证</p>
+<p>multiple file 文件多选</p>
+<h3 id="渐进增强和优雅降级"><a href="#渐进增强和优雅降级" class="headerlink" title="渐进增强和优雅降级"></a>渐进增强和优雅降级</h3><p>渐进增强:针对低版本浏览器进行构建页面，保证最基本的功能，</p>
+<p>然后再针对高级浏览器进行效果、交互等改进和追加</p>
+<p>功能达到更好的用户体验</p>
+<p>优雅降级:一开始就构建完整的功能，然后再针对低版本浏览器进行兼容</p>
+<h3 id="css3-选择器"><a href="#css3-选择器" class="headerlink" title="css3 选择器"></a>css3 选择器</h3><h4 id="一、层级选择器"><a href="#一、层级选择器" class="headerlink" title="一、层级选择器"></a>一、层级选择器</h4><p>E&gt;F 子代选择器(非 css3)</p>
+<p>E+F 匹配紧邻元素 E 的后面的元素 F(非 css3)</p>
+<p>E~F 选择前面有 E 元素的每个 F 元素</p>
+<h4 id="二、属性选择器"><a href="#二、属性选择器" class="headerlink" title="二、属性选择器"></a>二、属性选择器</h4><p>1、E[attr]：只使用属性名，但没有确定任何属性值</p>
+<p>2、E[attr=”value”]：指定属性名和属性值(值完整)</p>
+<p>3、E[attr~=”value”]：指定属性名，并且具有属性值，</p>
+<p>此属性值是一个词列表，并且以空格隔开，</p>
+<p>其中词列表中包含了一个 value 词</p>
+<p>4、E[attr^=”value”]：属性值是以 value 开头的(一部分也可以)</p>
+<p>5、E[attr$=”value”]：属性值是以 value 结束的(一部分也可以)</p>
+<p>6、E[attr*=”value”]：属性值中包含了 value(一部分也可以)</p>
+<p>7、E[attr|=”value”]：属性值是 value 或者以“value-”开头的值</p>
+<p>（比如说 zh-cn）;</p>
+<p>***4/5/6 是 css3 新增的选择器</p>
+<h4 id="三、伪类选择器"><a href="#三、伪类选择器" class="headerlink" title="三、伪类选择器"></a>三、伪类选择器</h4><p>1.结构性伪类选择器</p>
+<p>X:first-child 匹配子集的第一个 X 元素(非 css3)</p>
+<p>X:last-child 匹配子集的最后一个 X 元素</p>
+<p>X:nth-child(n) 匹配索引值为 n 的子元素,索引值从 1 开始</p>
+<p>X:only-child 匹配唯一的子元素</p>
+<p>X:nth-of-type(n) 匹配同类型中的第 n 个同级兄弟元素 X</p>
+<p>X:only-of-type 匹配同类型中唯一元素 X</p>
+<p>X:first-of-type 匹配同类型兄弟元素中的第一个 X 元素</p>
+<p>X:nth-last-child(n) 从最后一个开始算索引</p>
+<p>X:nth-last-of-type(n) 匹配同类型中的倒数第 n 个兄弟元素 X</p>
+<p>X:root 匹配文档的根元素</p>
+<p>X:empty 匹配没有任何子元素,也没有文本的元素 X</p>
+<p>.list li:nth-child(even){偶数</p>
+<p>background-color: yellow;</p>
+<p>}</p>
+<p>.list li:nth-child(odd){奇数</p>
+<p>background-color: pink;</p>
+<p>}</p>
+<p>2.目标伪类选择器</p>
+<p>E:target 选择匹配 E 的所有元素，且匹配元素被相关 URL 指向</p>
+<p>3.语言伪类选择器</p>
+<p>E:lang(language) 指定了 lang 属性,而且其值为 language(非 css3)</p>
+<p>4.UI 元素状态伪类选择器</p>
+<p>E:enabled 匹配（form 表单）中处于可用状态的 E 元素</p>
+<p>E:disabled 匹配（form 表单）中处于不可用状态的 E 元素</p>
+<p>E:checked 匹配（form 表单）中处于选中状态的 E 元素</p>
+<p>E::selection 匹配 E 元素中被用户选中的部分，（鼠标拖动选中文字）</p>
+<p>5.否定伪类选择器</p>
+<p>E:not(s) （IE6-8 浏览器不支持）</p>
+<p>匹配所有不匹配简单选择符 s 的元素 E</p>
+<p>6.动态伪类选择器(非 css3)</p>
+<p>E:link 超链接并未被访问过</p>
+<p>E:visited 超链接已被访问过</p>
+<p>E:active 元素被激活</p>
+<p>E:hover 鼠标停留在元素 E 上</p>
+<p>E:focus 元素获取焦点</p>
+<h3 id="浏览器前缀-1"><a href="#浏览器前缀-1" class="headerlink" title="浏览器前缀"></a>浏览器前缀</h3><p>IE:-ms-</p>
+<p>火狐 mozilla firefox:-moz-(基于 gecko 内核的浏览器)</p>
+<p>欧朋 Opera:-o-</p>
+<p>谷歌 google chrome,Safari:-webkit-(基于 webkit 内核的浏览器)</p>
+<h3 id="盒子阴影"><a href="#盒子阴影" class="headerlink" title="盒子阴影"></a>盒子阴影</h3><p>box-shadow:水平位置 垂直位置 模糊距离 [阴影尺寸] 阴影颜色 [内阴影(inset)];</p>
+<p>例子 box-shadow: 0px 0px 20px 666;</p>
+<h3 id="文本阴影"><a href="#文本阴影" class="headerlink" title="文本阴影"></a>文本阴影</h3><p>text-shadow:水平位置 垂直位置 模糊距离 阴影颜色;</p>
+<h3 id="文本换行的相关属性"><a href="#文本换行的相关属性" class="headerlink" title="文本换行的相关属性"></a>文本换行的相关属性</h3><p>word-wrap</p>
+<p>属性值：</p>
+<p>normal 只在允许的断字点换行（浏览器保持默认处理）</p>
+<p>break-word 允许长单词或 URL 地址换行到下一行</p>
+<p>word-break</p>
+<p>属性值：</p>
+<p>break-all 直接进行单词内的断句</p>
+<p>keep-all 文本不会换行，只能在半角空格或连字符处换行</p>
+<h3 id="font-face-字体图标"><a href="#font-face-字体图标" class="headerlink" title="@font-face 字体图标"></a>@font-face 字体图标</h3><p>阿里巴巴矢量图标库</p>
+<h3 id="背景的新增属性"><a href="#背景的新增属性" class="headerlink" title="背景的新增属性"></a>背景的新增属性</h3><p>1.background-origin 背景原点</p>
+<p>padding-box 背景图像填充框的相对位置(默认值)</p>
+<p>border-box 背景图像边界框的相对位置</p>
+<p>content-box 背景图像的相对位置的内容框</p>
+<p>2.background-clip 背景裁切</p>
+<p>border-box 背景被裁剪到边框盒(默认值)</p>
+<p>padding-box 背景被裁剪到内边距框</p>
+<p>content-box 背景被裁剪到内容框</p>
+<p>3.background-size 背景尺寸</p>
+<p>cover 把背景图像扩展至足够大，完全覆盖背景区域</p>
+<p>contain 把图像图像扩展至最大尺寸，以使其宽度或高度完全适应内容区域</p>
+<p>具体数值/百分比</p>
+<p>4.多背景属性</p>
+<h3 id="边框的新增属性"><a href="#边框的新增属性" class="headerlink" title="边框的新增属性"></a>边框的新增属性</h3><p>1.border-image 图片边框</p>
+<p>border-image-source 路径</p>
+<p>border-image-slice 图片边框向内偏移</p>
+<p>border-image-repeat 平铺(repeat)铺满(round)拉伸(stretch)</p>
+<p>border-image-outset 边框图像区域超出边框的量</p>
+<p>简写形式 border-image:路径 偏移 平铺;</p>
+<p>2.border-radius 圆角边框</p>
+<p>border-radius:5px;</p>
+<p>border-radius: 5px 10px 20px 50px;从左上角开始顺时针设置倒角</p>
+<p>border-radius: 30px/15px;倒椭圆形</p>
+<p>border-radius:10px 20px 30px 40px/40px 30px 20px 10px;</p>
+<p><code>### Day14 8/7</code></p>
+<h3 id="弹性盒"><a href="#弹性盒" class="headerlink" title="弹性盒"></a>弹性盒</h3><h4 id="给父元素添加"><a href="#给父元素添加" class="headerlink" title="给父元素添加"></a>给父元素添加</h4><p>1.display:flex/inline-flex;</p>
+<p>flex 将对象作为弹性伸缩盒显示</p>
+<p>inline-flex 将对象作为内联块弹性伸缩盒显示</p>
+<p>2.flex-direction (主轴排列方向)</p>
+<p>row 默认，横向一行排列</p>
+<p>row-reverse 反转横向排列</p>
+<p>column 纵向排列</p>
+<p>column-reverse 反转纵向排列</p>
+<p>3.justify-content(主轴对齐方式)</p>
+<p>flex-start 默认，顶端对齐</p>
+<p>flex-end 末端对齐</p>
+<p>center 居中对齐</p>
+<p>space-between 两端对齐，中间自动分配</p>
+<p>space-space-evenly 两端和元素之间间距相等</p>
+<p>space-around 自动分配距离</p>
+<p>*默认元素在主轴上容不下不会换行，会被压缩</p>
+<p>4.align-items (侧轴对齐方式)</p>
+<p>flex-start 侧轴起始边界</p>
+<p>flex-end 侧轴结束边界</p>
+<p>center 居中放置</p>
+<p>baseline 基线对齐</p>
+<p>stretch 默认值，项目被拉伸以适应容器</p>
+<p>5.flex-wrap 设置换行</p>
+<p>nowrap 容器为单行，该情况下子项可能会溢出容器</p>
+<p>wrap 容器为多行，子项内部会发生断行</p>
+<p>wrap-reverse 反转排列</p>
+<p>6.align-content(行与行之间对齐方式)</p>
+<p>flex-start 没有行间距</p>
+<p>flex-end 底对齐没有行间距</p>
+<p>center 居中没有行间距</p>
+<p>space-between 两端对齐，中间自动分配</p>
+<p>space-around 自动分配距离</p>
+<p>stretch 默认值，项目被拉伸以适应容器</p>
+<h4 id="给子元素添加"><a href="#给子元素添加" class="headerlink" title="给子元素添加"></a>给子元素添加</h4><p>给子元素添加</p>
+<p>1.align-self 灵活容器内被选中项目的对齐方式</p>
+<p>--可重写灵活容器的 align-items 属性</p>
+<p>auto 默认值，元素继承了它的父容器的 align-items 属性</p>
+<p>stretch 元素被拉伸以适应容器</p>
+<p>center 元素位于容器的中心</p>
+<p>flex-start 元素位于容器的开头</p>
+<p>flex-end 元素位于容器的结尾</p>
+<p>2.order 排序优先级</p>
+<p>数字越大越往后排，默认为 0，支持负数</p>
+<p>3.flex-grow 项目的放大比例</p>
+<p>flex:1;–放大比例</p>
+<p>4.flex-shrink 项目的缩小比例</p>
+<p>flex-shrink:0;元素不缩小</p>
+<p>5.flex-basis 项目的长度</p>
+<p>*flex 为第 345 条的简写形式（不建议写）;</p>
+<p>flex:0 1 auto;</p>
+<h3 id="多列"><a href="#多列" class="headerlink" title="多列"></a>多列</h3><p>column-count：；列数</p>
+<p>column-gap：间距；</p>
+<p>column-rule：；线条</p>
+<p>*break- inside:avoid;禁止元素内部打断</p>
+<p><code>### Week 4## Day15 8/10</code></p>
+<h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><p>@media only screen and (min-width :1201px ) {</p>
+<p>box{</p>
+<p>background: yellow;</p>
+<p>} -1201 及以上尺寸</p>
+<p>@media only screen and (min-width: 601px) and (max-width: 1200px) {</p>
+<p>box{</p>
+<p>background: green;</p>
+<p>} -601px 到 1200px 之间的尺寸</p>
+<p>@media only screen and (max-width : 600px ) {</p>
+<p>box{</p>
+<p>background: red;</p>
+<p>}</p>
+<p>} -600px 一下的尺寸</p>
+<p>@media screen and (orientation : portrait) {}竖屏</p>
+<p>@media screen and ( orientation: landscape) {}横屏</p>
+<p>断点:逻辑像素</p>
+<p>iphone5 :320px、iphone6/ 7/8:375px、iphone6/ 7/8plus :414px、</p>
+<h3 id="移动端布局"><a href="#移动端布局" class="headerlink" title="移动端布局"></a>移动端布局</h3><p>1. meta 标签</p>
+<p>&lt;meta name=”viewport”</p>
+<p>content= “width=device -width，initial-scale=1, minimum-scale=1 ,<br>maximum-scale=1,user- scalablezno” /&gt;</p>
+<p>这段代码的几个参数解释:</p>
+<p>width = device-width: 宽度等于当前设备的宽度</p>
+<p>initial-scale:初始的缩放比例(默认设置为 1.0)</p>
+<p>minimum-scale:允许用户缩放到的最小比例(默认设置为 1.0)</p>
+<p>maximum-scale:允许用户缩放到的最大比例(默认设置为 1.0)</p>
+<p>user-scalable:用户是否可以手动缩放<br>(默认设置为 no，因为我们不希望用户放大缩小页面)</p>
+<p>2.单位 rem</p>
+<p>em 是父元素字体大小的倍数</p>
+<p>rem 是根元素字体大小的倍数</p>
+<ol>
+<li><p>dpr</p>
+<p> ppi：像素密度，所表示的是每英寸所拥有的像素数量</p>
+<p> dpr = 物理像素(UI 设计图) / 逻辑像素(代码设置的尺寸)</p>
+</li>
+</ol>
+<p><code>### Day15 8/11</code></p>
+<h4 id="vw-rem-布局"><a href="#vw-rem-布局" class="headerlink" title="vw-rem 布局"></a>vw-rem 布局</h4><p>vw：</p>
+<p>1vw=视口宽的 1%</p>
+<p>100vw=视口宽度</p>
+<p>vh：</p>
+<p>1vh=视口宽的 1%</p>
+<p>100vh=视口宽度</p>
+<p>iphone5 标准</p>
+<p>320px=100vw</p>
+<p>100px=31.25vw</p>
+<p>iphone6/7/8 标准</p>
+<p>375px=100vw</p>
+<p>100px=26.67vw</p>
+<p><code>### Day16 8/12</code></p>
+<p>CSS Sprites、精灵图、雪碧图</p>
+<p>-将多个图片整理在一张图片上，通过背景定位的方式引入不同图片</p>
+<p>-背景图一般是小图标或者装饰作用的图片</p>
+<p>-img 一般是页面的内容</p>
+<h4 id="图片整合优势"><a href="#图片整合优势" class="headerlink" title="图片整合优势"></a>图片整合优势</h4><p>1)通过图片整合来减少对服务器的请求次数，从而提高页面的加载速度</p>
+<p>2)通过整合图片来减小图片的体积</p>
+<h4 id="图片整合的原则"><a href="#图片整合的原则" class="headerlink" title="图片整合的原则"></a>图片整合的原则</h4><p>1.根据实际需求，小图标尽量上下排列(防止后面不必要的背景图)</p>
+<p>2.小图标之间尽量留出足够的空间</p>
+<p>3.整合大图片的背景-.定是透明的</p>
+<p>4.列表符号的图标尽量放在图片最右侧</p>
+<p>5.一般情况下，小图标才会做整合</p>
+<h3 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h3><p>IETester:IE6–11</p>
+<h3 id="CSSHack-指一种兼容-CSS-在不同浏览器中正确显示的技巧方法"><a href="#CSSHack-指一种兼容-CSS-在不同浏览器中正确显示的技巧方法" class="headerlink" title="CSSHack 指一种兼容 CSS 在不同浏览器中正确显示的技巧方法:"></a>CSSHack 指一种兼容 CSS 在不同浏览器中正确显示的技巧方法:</h3><p>1.图片间隙</p>
+<p>img 设置 display:block;或者 vertical-align:不为 baseline ;</p>
+<p>父元素设置 font-size:0;</p>
+<p>2.浮动双倍外边距(IE6 会碰到)</p>
+<p>子元素添加 display:inline;</p>
+<ol>
+<li><p>表单元素高度及对齐方式不一致</p>
+<p> &lt;input type= “text” / &gt;&lt;input type=”button” value=”按钮” /&gt;</p>
+<p> 同高对平方向不在一条线</p>
+<p> 浮动起来，再调节高度</p>
+</li>
+</ol>
+<p>4.a 标签包裹图片</p>
+<p>5.透明写法</p>
+<p>opacity: 0~1;IE8 以上的浏览器</p>
+<p>filter :alpha( opacity=1~100); IE9 及 IE9 以 下的浏览器</p>
+<p>6.cursor 鼠标移入效果</p>
+<p>pointer 小手/hand(IE)</p>
+<h3 id="特殊符号进行-IE-浏览器的兼容"><a href="#特殊符号进行-IE-浏览器的兼容" class="headerlink" title="特殊符号进行 IE 浏览器的兼容"></a>特殊符号进行 IE 浏览器的兼容</h3><p>IE6 识别_ -</p>
+<p>ie6, 7 识别* +</p>
+<p>ie8-11 识别\0 background: green\0;</p>
+<p>ie9-10 识别在属性后\9\0</p>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>1.css 优化</p>
+<p>相同的 CSS 样式提取到一个样式表里,调用即可</p>
+<p>2.头部优化</p>
+<p>&lt;meta name=”keywords ”content=”” /&gt;向搜索引擎说明你的网页的关键词王</p>
+<p>&lt;meta name=”description” content=””/&gt; 告诉搜索引擎你的站点的主要内容</p>
+<blockquote>
+<p>3.超链接优化</p>
+</blockquote>
+<blockquote>
+<p>建议采用纯文本链接</p>
+</blockquote>
+<blockquote>
+<p>title 属性</p>
+</blockquote>
+<blockquote>
+<p>最好别使用图片热点链接</p>
+</blockquote>
+<p>4.图片优化</p>
+<p>alt 和 title</p>
+<p>&lt;img src=”01.png” alt=”” /&gt;</p>
+<ol>
+<li><p> 搜索引擎不喜欢索引大体积的页面</p>
+</li>
+<li><p>css 规范</p>
+<p> 命名方法（语义化命名，结构化命名）</p>
+</li>
+</ol>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>补全标签 tab</p>
+<p>注释 ctr1+/|</p>
+<p>删除 ctrl+d</p>
+<p>div.lal →&lt;div class=”lal”&gt;&lt;/div&gt;</p>
+<p>divlal →&lt;div id=”lal”&gt;&lt;/div&gt;</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>transparent 透明色</p>
+<p>&lt;link rel=”stylesheet” type=”text/css” href=”css/style.css”/&gt;</p>
+<p>rel=”stylesheet”作用：关联样式表</p>
+<p>!important 最高</p>
+<p>一个容器可以添加多个背景中间用 ， 做间隔 但小的要在前</p>
+<p>Margin 设置上边距父元素没有边框会设置给父元素 ：解决办法 1 给父元素透明边框</p>
+<h3 id="CSS-的继承性"><a href="#CSS-的继承性" class="headerlink" title="CSS 的继承性"></a>CSS 的继承性</h3><p>不可继承的: display、mangin、border、padding、 background、 height、min-height、<br>max-height、、min-width、 max-width、 overflow、 position、 left、 right、 top、</p>
+<p>bottom、z-index、 float、 clear、 table-layout、 vertical-align</p>
+<p>所有元素可继承: visibility 和 cursor。</p>
+<p>内联元素可继承: letter-spacing、 word-spacing、 line -height、color、<br>font、font- family、font-size、 font-style、 font-variant、font-weight、text-</p>
+<p>decoration、text-transform。</p>
+<p>块状元素可继承: text- indent 和 text-align</p>
+<p>列表元素可继承: list-style、 list-style-type、 list-style-position、 list-style-<br>image。</p>
+<p>表格元素可继承: border-collapse。</p>
+<p>line- , text- , font- ，color 开头的子类可以继承</p>
+<p>pointer-events: none;<br>用来解决鼠标移出父元素覆盖子元素时，过渡反复执行问题，示例：D:\HBuilderProjects\qianfeng\keshang\几十种 CSS3 鼠标悬停动画特效\test.html <code>uu考虑上传</code></p>
+</div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>Mayyuji</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://mayyuji.github.io/2021/04/27/notes1/" title="HTML+CSS笔记">https://mayyuji.github.io/2021/04/27/notes1/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2021/04/27/gitandmd/" rel="prev" title="Git和Markdown的基本语法"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">Git和Markdown的基本语法</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2021/04/27/DOMxmind/" rel="next" title="DOm XMind"><span class="post-nav-text">DOm XMind</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 1202 – 2025 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> Mayyuji</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.2</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.6.1</span></div><div class="footer-custom-text"><p style="color:white;">🙃</p></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#8DADFC" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div id="local-search-result"></div></div></div></body></html>
